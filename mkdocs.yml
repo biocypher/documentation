@@ -27,25 +27,16 @@ theme:
 
 nav:
   - Home: index.md
-  - BioCypher:
-      - !include biocypher/docs/mkdocs.nav.yml
-  - BioChatter:
-      - !include biochatter/docs/mkdocs.nav.yml
+  - Components: "*include ./{biocypher,biochatter}/mkdocs.yml"
 
 plugins:
   - search
+  - include-markdown
   - mkdocstrings:
       handlers:
         python:
           paths: [.]
-  - monorepo:
-      modules:
-        biocypher:
-          path: biocypher/docs
-          repo_url: https://github.com/biocypher/biocypher
-        biochatter:
-          path: biochatter/docs
-          repo_url: https://github.com/biocypher/biochatter
+  - monorepo
 
 markdown_extensions:
   - pymdownx.highlight:

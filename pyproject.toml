@@ -4,13 +4,16 @@ version = "0.1.0"
 description = "Unified documentation for the BioCypher ecosystem"
 authors = ["Sebastian Lobentanzer <sebastian.lobentanzer@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.9,<4.0"
 mkdocs-material = "^9.5.0"
 mkdocs-monorepo-plugin = "^1.0.5"
-mkdocstrings = "^0.24.0"
+mkdocstrings = {version = ">=0.24.0", extras = ["python"]}
 mkdocstrings-python = "^1.7.0"
+mkdocs-include-markdown-plugin = "^7.1.4"
+griffe = ">=0.36.3"
 
 [build-system]
 requires = ["poetry-core"]
