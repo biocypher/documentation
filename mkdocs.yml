@@ -11,6 +11,14 @@ theme:
     - navigation.expand
     - search.suggest
     - search.highlight
+    - content.code.copy
+    - navigation.path
+    - navigation.footer
+    - navigation.indexes
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -38,6 +46,11 @@ plugins:
         python:
           paths: [., biocypher, biochatter]
   - monorepo
+  - table-reader
+  - mkdocs-jupyter
+  - social
+  - redirects:
+      redirect_maps: {} # Can be configured as needed
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -49,3 +62,26 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - attr_list
+  - md_in_html
+  - neoteroi.timeline
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      toc_depth: 3
+      title: On this page
+
+extra:
+  social:
+    - icon: simple/zulip
+      link: https://biocypher.zulipchat.com/
+    - icon: material/contacts
+      link: https://saezlab.org/
+  version:
+    provider: mike
+
+extra_css:
+  - assets/css/css-v1.1.0.css
+
+copyright: © Copyright 2021-2025, BioCypher developers.
