@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4.0"
+python = ">=3.10,<4.0"
 mkdocs-material = {extras = ["imaging"], version = "^9.5.10"}
 mkdocs-monorepo-plugin = "^1.0.5"
 mkdocstrings = {version = ">=0.24.0", extras = ["python"]}
@@ -18,6 +18,10 @@ neoteroi-mkdocs = "^1.1.0"
 mkdocs-table-reader-plugin = "^3.1.0"
 mkdocs-jupyter = "^0.25.1"
 mkdocs-redirects = "^1.2.2"
+colorcet = "^3.1.0"
+matplotlib = "^3.10.0"
+seaborn = "^0.13.2"
+scipy = "^1.15.2"
 
 [build-system]
 requires = ["poetry-core"]
