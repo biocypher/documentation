@@ -27,7 +27,8 @@ theme:
 
 nav:
   - Home: index.md
-  - Components: "*include ./{biocypher,biochatter}/mkdocs.yml"
+  - BioCypher: "*include ./biocypher/mkdocs.yml"
+  - BioChatter: "*include ./biochatter/mkdocs.yml"
 
 plugins:
   - search
@@ -35,7 +36,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: [.]
+          paths: [., biocypher, biochatter]
   - monorepo
 
 markdown_extensions:
