@@ -1,7 +1,7 @@
 site_name: BioCypher Ecosystem
 site_url: https://biocypher.org
-repo_url: https://github.com/biocypher/documentation
-repo_name: biocypher/documentation
+repo_url: https://github.com/biocypher/biocypher
+repo_name: biocypher/biocypher
 
 theme:
   name: material
@@ -36,7 +36,7 @@ theme:
 nav:
   - Home: index.md
   - BioCypher: "!include ./biocypher/mkdocs.yml"
-  - BioChatter: "!include ./biochatter/mkdocs.yml"
+  - BioChatter: "!include ./biochatter/mkdocs.nav.yml"
 
 plugins:
   - search
