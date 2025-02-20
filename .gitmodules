@@ -1,0 +1,6 @@
+[submodule "biocypher"]
+	path = biocypher
+	url = https://github.com/biocypher/biocypher
+[submodule "biochatter"]
+	path = biochatter
+	url = https://github.com/biocypher/biochatter
