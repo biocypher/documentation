@@ -27,8 +27,8 @@ theme:
 
 nav:
   - Home: index.md
-  - BioCypher: "*include ./biocypher/mkdocs.yml"
-  - BioChatter: "*include ./biochatter/mkdocs.yml"
+  - BioCypher: "!include ./biocypher/mkdocs.yml"
+  - BioChatter: "!include ./biochatter/mkdocs.yml"
 
 plugins:
   - search
