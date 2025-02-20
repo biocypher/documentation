@@ -2,8 +2,8 @@
 
 Welcome to the unified documentation for the BioCypher ecosystem. This documentation covers:
 
-## [BioCypher](biocypher/docs/index.md)
+## [BioCypher](biocypher)
 A framework for the creation of knowledge graphs in biology and medicine.
 
-## [BioChatter](biochatter/docs/index.md)
+## [BioChatter](biochatter)
 A framework for building biomedical AI agents. 
