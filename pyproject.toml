@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "biocypher-docs"
+version = "0.1.0"
+description = "Unified documentation for the BioCypher ecosystem"
+authors = ["Sebastian Lobentanzer <sebastian.lobentanzer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mkdocs-material = "^9.5.0"
+mkdocs-monorepo-plugin = "^1.0.5"
+mkdocstrings = "^0.24.0"
+mkdocstrings-python = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 

@@ -1,0 +1,59 @@
+site_name: BioCypher Ecosystem
+site_url: https://biocypher.org
+repo_url: https://github.com/biocypher/biocypher-docs
+repo_name: biocypher/biocypher-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - BioCypher:
+      - !include biocypher/docs/mkdocs.nav.yml
+  - BioChatter:
+      - !include biochatter/docs/mkdocs.nav.yml
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+  - monorepo:
+      modules:
+        biocypher:
+          path: biocypher/docs
+          repo_url: https://github.com/biocypher/biocypher
+        biochatter:
+          path: biochatter/docs
+          repo_url: https://github.com/biocypher/biochatter
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
