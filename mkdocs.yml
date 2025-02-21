@@ -8,17 +8,15 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
-    - navigation.path
     - navigation.footer
-    - navigation.indexes
     - content.action.edit
     - search.suggest
     - search.highlight
     - toc.integrate
+
   palette:
     - scheme: default
       primary: indigo
