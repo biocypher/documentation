@@ -92,7 +92,4 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - scripts/tablesort.js
 
-hooks:
-  - biochatter/docs/scripts/hooks.py
-
 copyright: © Copyright 2021-2025, BioCypher developers.
