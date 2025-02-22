@@ -1,4 +1,4 @@
-site_name: BioCypher Ecosystem
+site_name: The BioCypher Ecosystem
 site_url: https://biocypher.org
 repo_url: https://github.com/biocypher/biocypher
 repo_name: biocypher/biocypher
@@ -32,8 +32,19 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Home: index.md
+  - About:
+      - "": index.md
+      - Publications: biocypher/docs/publications.md
+      - Timeline: biocypher/docs/timeline.md
+      - Sponsors: biocypher/docs/sponsors.md
+      - Community:
+          - Home: biocypher/docs/community/index.md
+          - Contribute to BioCypher: biocypher/docs/community/contribute.md
+          - Contribute to the Documentation: biocypher/docs/community/contribute-docs.md
+          - Contribute to the Code Base: biocypher/docs/community/contribute-codebase.md
+
   - BioCypher: "!include ./biocypher/mkdocs.nav.yml"
+
   - BioChatter: "!include ./biochatter/mkdocs.nav.yml"
 
 plugins:
