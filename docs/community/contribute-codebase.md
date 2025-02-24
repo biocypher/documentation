@@ -1,8 +1,11 @@
 # Developer Guide
 
 Thank you for considering to contribute to the project! This guide will help you
-to get started with the development of the project. If you have any questions,
-please feel free to ask them in the issue tracker or on Zulip.
+get started with our development workflow (which is aligned with common
+open-source workflows). If you have any questions, please feel free to ask them
+in the issue tracker or on Zulip. We also use the
+[Discussions](https://github.com/orgs/biocypher/discussions) feature for talking
+about potential changes and additions.
 
 ## Small Contributions
 
@@ -13,11 +16,12 @@ For more substantial changes or additions, please read on.
 ## Larger Contributions
 
 If you want to contribute a larger change, please create an
-[issue](./contribute.md#categories) first. This will allow us to discuss the
-change and make sure that it fits into the project.  It can happen that
-development for a feature is already in progress, so it is important to check
-first to avoid duplicate work. If you have any questions, feel free to approach
-us in any way you like.
+[issue](./contribute.md#categories) first, or start a
+[Discussion](https://github.com/orgs/biocypher/discussions). This will allow us
+to discuss the change and make sure that it fits into the project. It can happen
+that development for a feature is already in progress, so it is important to
+check first to avoid duplicate work. If you have any questions, feel free to
+approach us in any way you like.
 
 ## Dependency management
 
@@ -37,10 +41,11 @@ before starting development.
 If you want to fix dependency issues, please do so in the Poetry
 framework. If Poetry does not work for you for some reason, please let us know.
 
-The Poetry dependencies are organized in groups. There are groups with
-dependencies needed for running BioCypher (`[tool.poetry.dependencies]` with the
+Poetry dependencies are organized in groups. There are groups with dependencies
+needed for running the package itself (`[tool.poetry.dependencies]` with the
 group name `main`) and a group with dependencies needed for development
-(`[tool.poetry.group.dev.dependencies]` with the group name `dev`).
+(`[tool.poetry.group.dev.dependencies]` with the group name `dev`). We also
+sometimes have dedicated dependency groups for optional dependencies.
 
 For adding new dependencies:
 
@@ -54,7 +59,7 @@ lock file: `poetry lock` and install the dependencies: `poetry install`.
 
 ## Code quality and formal requirements
 
-For ensuring code quality, the following tools are used:
+For ensuring code quality, we typically use the following tools:
 
 - [isort](https://isort.readthedocs.io/en/latest/) for sorting imports
 
@@ -96,7 +101,8 @@ To install the hooks run `poetry run pre-commit install`. The hooks are then
 executed before each commit. For running the hook for all project files (not
 only the changed ones) run `poetry run pre-commit run --all-files`. Our CI runs
 the pre-commit hooks, so running them locally is a good way to check if your
-code conforms to the formatting rules.
+code conforms to the formatting rules, as well as automatically fixing some
+linting errors.
 
 <!--
 The project uses a [Sphinx](https://www.sphinx-doc.org/en/master/) autodoc
@@ -115,10 +121,10 @@ this ensures that no outdated code snippets are part of the documentation.
 
 ## Testing
 
-The project uses [pytest](https://docs.pytest.org/en/stable/) for testing. To
-run the tests, please run `pytest` in the root directory of the project. We are
-developing BioCypher using test-driven development. Please make sure that you
-add tests for your code before submitting a pull request.
+We use [pytest](https://docs.pytest.org/en/stable/) for testing in all projects.
+To run the tests, please run `pytest` in the root directory of the project. We
+follow the philosophy of test-driven development. Please make sure that you add
+tests for your code before submitting a pull request.
 
 The existing tests can also help you to understand how the code works. If you
 have any questions, please feel free to ask them in the issue tracker or on
@@ -135,7 +141,7 @@ that the version number is incremented according to the following scheme:
 - Increment the major version number if you make incompatible API changes.
 
 - Increment the minor version number if you add functionality in a backwards-
-  compatible manner. Since we are still in the 0.x.y version range, most of the
+  compatible manner. For all packages in the 0.x.y version range, most of the
   significant changes will increase the minor version number.
 
 - Increment the patch version number if you make backwards-compatible bug fixes.
@@ -143,7 +149,7 @@ that the version number is incremented according to the following scheme:
 We use the `bumpversion` tool to update the version number in the
 `pyproject.toml` file. This will create a new git tag automatically. Usually,
 versioning is done by the maintainers, so please do not increment versions in
-pull requests by default.
+pull requests by default, as this interferes with the GitHub release workflow.
 
 ## Finding an issue to contribute to
 
@@ -176,7 +182,7 @@ To improve the chances of your pull request being reviewed, you should:
 
 ### Version control, Git, and GitHub
 
-BioCypher is hosted on GitHub, and to contribute, you will need to sign up for a
+BioCypher is hosted on GitHub and, to contribute, you will need to sign up for a
 [free GitHub account](https://github.com/signup/free). We use
 [Git](https://git-scm.com/) for version control to allow many people to work
 together on the project.
@@ -217,16 +223,17 @@ scientific computing.
 
 [GitHub has
 instructions](https://docs.github.com/en/get-started/quickstart/set-up-git) for
-installing git, setting up your SSH key, and configuring git. All these steps
-need to be completed before you can work seamlessly between your local
+installing and configuring git and for setting up your SSH key. All these
+steps need to be completed before you can work seamlessly between your local
 repository and GitHub.
 
-### Create a fork of BioCypher
+### Create a fork of the repository
 
-You will need your own fork of BioCypher in order to eventually open a Pull
-Request. Go to the BioCypher project page and hit the Fork button. Please
-uncheck the box to copy only the main branch before selecting Create Fork. You
-will then want to clone your fork to your machine.
+You will need your own fork of the repository you want to work on in order to
+eventually open a Pull Request. Go to the repository page and hit the Fork
+button. Uncheck the box to copy only the main branch before selecting `Create
+Fork`. You will then want to clone your fork to your machine (for instance,
+`biocypher`).
 
 ```bash
 git clone https://github.com/your-user-name/biocypher.git
@@ -241,8 +248,8 @@ your local repository and fork are separate from the upstream repository.
 
 ### Creating a feature branch
 
-Your local `main` branch should always reflect the current state of BioCypher
-repository. First ensure it's up-to-date with the main BioCypher repository.
+Your local `main` branch should always reflect the current state of the
+upstream repository. First ensure it's up-to-date with the upstream repository.
 
 ```bash
 git checkout main
@@ -258,16 +265,16 @@ git checkout -b my-new-feature-for-biocypher
 
 This changes your working branch from `main` to the
 `my-new-feature-for-biocypher` branch. Keep any changes in this branch specific
-to one bug or feature so it is clear what the branch brings to *BioCypher*. You
-can have many feature branches and switch between them using the `git
-checkout` command.
+to one bug or feature so it is clear what the branch brings to the target
+package. You can have many feature branches and switch between them using the
+`git checkout` command.
 
 ### Making code changes
 
 Before modifying any code, ensure you follow the contributing environment
 guidelines to set up an appropriate development environment.
 
-When making changes, follow these BioCypher-specific guidelines:
+When making changes, please follow these guidelines:
 
 1. Keep changes of that branch/PR focused on a single feature or bug fix.
 
@@ -280,7 +287,7 @@ appear publicly on your GitHub page, you can
 [push](https://git-scm.com/docs/git-push) your forked feature branch's commits
 to your forked repository on GitHub.
 
-Now your code is on GitHub, but it is not yet a part of the BioCypher project.
+Now your code is on GitHub, but it is not yet a part of the upstream project.
 For that to happen, a Pull Request (PR) needs to be submitted.
 
 ### Opening a Pull Request (PR)
@@ -296,7 +303,7 @@ next release. To submit a Pull Request:
 
 1. You can then click on Commits and Files Changed to make sure everything looks okay one last time.
 
-1. Write a descriptive title that includes prefixes. BioCypher uses a convention for title prefixes, most commonly, `feat:` for features, `fix:` for bug fixes, and `refactor:` for refactoring.
+1. Write a descriptive title that includes prefixes. We typically use a convention for title prefixes, most commonly, `feat:` for features, `fix:` for bug fixes, and `refactor:` for refactoring.
 
 1. Write a description of your changes in the `Preview Discussion` tab. This description will inform the reviewers about the changes you made, so please include all relevant information, including the motivation, implementation details, and references to any issues that you are addressing.
 
@@ -316,9 +323,12 @@ feedback and update your pull request.
 
 ### Parallel changes in the upstream `main` branch
 
-In case of simultaneous changes to the upstream code, it is important that
-these changes are reflected in your pull request. To update your feature
-branch with changes in the biocypher `main` branch, run:
+In case of simultaneous changes to the upstream code, it is important that these
+changes are reflected in your pull request. GitHub provides a function on their
+web interface to synchronise a PR automatically via the push of a button, but
+this does not always work, for instance if there are merge conflicts. To
+manually update your feature branch with changes in the upstream `main` branch,
+run (for instance):
 
 ```shell
 
@@ -346,5 +356,5 @@ request by pushing to the branch on GitHub:
     git push origin my-new-feature-for-biocypher
 ```
 
-Any `git push` will automatically update your pull request with your branch's changes
-and restart the `Continuous Integration` checks.
+Any `git push` will automatically update your pull request with your branch's
+changes and restart the `Continuous Integration` checks.
