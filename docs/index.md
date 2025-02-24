@@ -10,7 +10,7 @@ is to facilitate research, particularly in biology and medicine, by streamlining
 the scientific workflow.  We do this by providing a suite of tools that help
 manage knowledge in various ways.
 
-<div class="grid cards" markdown>
+<div class="grid cards grid-2" markdown>
 
 -   :material-package-variant-closed-check:{ .lg .middle } __Bespoke libraries__
 
@@ -23,6 +23,10 @@ manage knowledge in various ways.
     ---
 
     Sharing resource adapters for data sources, AI models, etc.
+
+</div>
+
+<div class="grid cards grid-2" markdown>
 
 -   :material-robot-happy:{ .lg .middle } __Robust assistance__
 
