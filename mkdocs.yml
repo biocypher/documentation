@@ -38,10 +38,10 @@ nav:
       - Timeline and Publications: project.md
       - Sponsors: sponsors.md
       - Community:
-          - Home: biocypher/docs/community/index.md
-          - Contribute to BioCypher: biocypher/docs/community/contribute.md
-          - Contribute to the Documentation: biocypher/docs/community/contribute-docs.md
-          - Contribute to the Code Base: biocypher/docs/community/contribute-codebase.md
+          - Home: community/index.md
+          - Contribute to BioCypher: community/contribute.md
+          - Contribute to the Documentation: community/contribute-docs.md
+          - Contribute to the Code Base: community/contribute-codebase.md
 
   - BioCypher: "!include ./biocypher/mkdocs.nav.yml"
 
