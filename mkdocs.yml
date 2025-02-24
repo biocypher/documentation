@@ -1,7 +1,7 @@
 site_name: The BioCypher Ecosystem
 site_url: https://biocypher.org
-repo_url: https://github.com/biocypher/biocypher
-repo_name: biocypher/biocypher
+repo_url: https://github.com/biocypher/documentation
+repo_name: biocypher/documentation
 edit_uri: edit/main/docs
 
 theme:
