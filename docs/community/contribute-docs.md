@@ -18,6 +18,18 @@ top right of any page. This will take you to the source file on GitHub, where
 you can make your changes and create a pull request using GitHub's web
 interface (the `Commit changes...` button).
 
+!!! note
+
+    In this unified documentation, the edit link may not work due to technical
+    limitations with the
+    [plugin](https://github.com/backstage/mkdocs-monorepo-plugin) we use. If
+    there is no edit link (or if it is broken), you can still contribute by
+    creating an issue and/or pull request on the GitHub repository of the
+    respective package. Edit links will also be available in the individual
+    documentation pages of the sub-packages, at their GitHub Pages sites. These
+    are linked from the main docs and follow the pattern
+    `https://biocypher.github.io/<package name>`.
+
 Some other important things to know about the docs:
 
 - The BioCypher documentation consists of two parts: the docstrings in the code
