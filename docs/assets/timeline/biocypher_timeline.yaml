@@ -28,6 +28,12 @@
   sub_title: "2023-06-19"
   title: Journal publication
 - content: |
+    Perspective on molecular causality in the advent of foundation models in [EMBO Molecular Systems Biology](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w).  
+    [:octicons-arrow-right-24: Read it here](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w)
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2024-03-20"
+  title: Journal publication
+- content: |
     BioChatter peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-024-02534-3).  
     [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-024-02534-3)
   icon: ":material-file-document-check-outline:"
