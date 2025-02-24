@@ -2,6 +2,7 @@ site_name: The BioCypher Ecosystem
 site_url: https://biocypher.org
 repo_url: https://github.com/biocypher/biocypher
 repo_name: biocypher/biocypher
+edit_uri: edit/main/docs
 
 theme:
   name: material
