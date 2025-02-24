@@ -36,7 +36,7 @@ jobs:
             mkdocs-material-
 
       - name: Packages
-        run: pip install mkdocs-material[imaging] mkdocstrings[python] pandas mkdocs-table-reader-plugin seaborn matplotlib scipy colorcet mkdocs-redirects mkdocs-include-markdown-plugin mkdocs-monorepo-plugin mkdocs-jupyter
+        run: pip install mkdocs-material[imaging] mkdocstrings[python] pandas mkdocs-table-reader-plugin seaborn matplotlib scipy colorcet mkdocs-redirects mkdocs-include-markdown-plugin mkdocs-monorepo-plugin mkdocs-jupyter neoteroi
 
       - name: Build
         run: mkdocs build
