@@ -36,7 +36,7 @@ nav:
   - About:
       - "": index.md
       - Timeline and Publications: project.md
-      - Sponsors: biocypher/docs/sponsors.md
+      - Sponsors: sponsors.md
       - Community:
           - Home: biocypher/docs/community/index.md
           - Contribute to BioCypher: biocypher/docs/community/contribute.md
