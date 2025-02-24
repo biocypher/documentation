@@ -35,8 +35,7 @@ theme:
 nav:
   - About:
       - "": index.md
-      - Publications: biocypher/docs/publications.md
-      - Timeline: biocypher/docs/timeline.md
+      - Timeline and Publications: project.md
       - Sponsors: biocypher/docs/sponsors.md
       - Community:
           - Home: biocypher/docs/community/index.md

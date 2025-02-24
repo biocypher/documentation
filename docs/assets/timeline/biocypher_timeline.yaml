@@ -1,33 +1,43 @@
 # BioCypher Timeline
 - content: Start of BioCypher development.
-  icon: ':material-rocket-launch-outline:'
+  icon: ":material-rocket-launch-outline:"
   sub_title: "2021-09-10"
   title: BioCypher Launch
-- content: BioCypher preprint v1 published on arXiv.
-  icon: ':material-file-document-plus-outline:'
+- content: |
+    BioCypher preprint v1 published on [arXiv](https://arxiv.org/abs/2212.13543).  
+    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2212.13543)
+  icon: ":material-file-document-plus-outline:"
   sub_title: "2022-12-27"
   title: Preprint publication
 - content: BioChatter start of development.
-  icon: ':material-rocket-launch-outline:'
+  icon: ":material-rocket-launch-outline:"
   sub_title: "2023-04-03"
   title: BioChatter Launch
-- content: BioChatter preprint v1 published on arXiv.
-  icon: ':material-file-document-plus-outline:'
+- content: |
+    BioChatter preprint v1 published on [arXiv](https://arxiv.org/abs/2305.06488).  
+    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2305.06488)
+  icon: ":material-file-document-plus-outline:"
   sub_title: "2023-05-10"
   title: Preprint publication
-- content: BioCypher peer-reviewed in Nature Biotechnology.
-  icon: ':material-file-document-check-outline:'
+- content: |
+    BioCypher peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-023-01848-y).  
+    [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-023-01848-y)  
+    [:octicons-arrow-right-24: Read the self-archived version on Zenodo](https://zenodo.org/records/10320714)  
+    [:octicons-arrow-right-24: Read the online version](https://biocypher.github.io/biocypher-paper/)
+  icon: ":material-file-document-check-outline:"
   sub_title: "2023-06-19"
   title: Journal publication
-- content: BioChatter peer-reviewed in Nature Biotechnology.
-  icon: ':material-file-document-check-outline:'
+- content: |
+    BioChatter peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-024-02534-3).  
+    [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-024-02534-3)
+  icon: ":material-file-document-check-outline:"
   sub_title: "2025-01-22"
   title: Journal publication
 - content: BioGather start of development.
-  icon: ':material-rocket-launch-outline:'
+  icon: ":material-rocket-launch-outline:"
   sub_title: "2025-02-10"
   title: BioGather Launch
 - content: BioGather preprint v1 published on arXiv.
-  icon: ':material-file-document-plus-outline:'
+  icon: ":material-file-document-plus-outline:"
   sub_title: "Soon"
   title: Preprint publication
