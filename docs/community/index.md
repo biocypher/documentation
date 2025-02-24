@@ -32,9 +32,13 @@ focused. It also is free of charge for open-source and academic projects, which
 means that they sponsor the cloud hosting for our channel (as for many other
 open-source projects) - thanks!
 
-Sign up [here](https://biocypher.zulipchat.com/).
+[:octicons-arrow-right-24: Sign up here](https://biocypher.zulipchat.com/)
 
 ## Contributing Guidelines GitHub Links
+
+<!-- TODO: centralise CONTRIBUTING, CODE_OF_CONDUCT, DEVELOPER? They should be
+available in all individual repos, not sure if they can link to a central
+location. How to synchronise them? -->
 
 - [Contribution guidelines](https://github.com/biocypher/biocypher/blob/main/CONTRIBUTING.md)
 

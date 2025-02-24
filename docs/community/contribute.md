@@ -17,10 +17,11 @@ comments/ideas from others.
 
 ### Categories
 
-- [Bug Report](https://github.com/biocypher/biocypher/issues/new?template=BUG-REPORT.yml): Report incorrect behavior in the BioCypher library
+- **Bug Report**: Report incorrect behavior in one of the BioCypher ecosystem libraries ([BioCypher](https://github.com/biocypher/biocypher/issues/new?template=BUG-REPORT.yml), [BioChatter](https://github.com/biocypher/biochatter/issues/new?template=bug_report.md))
 - [Register New Component](https://github.com/biocypher/biocypher/issues/new?template=ADD-COMPONENT.yml): Register a new component in the BioCypher ecosystem, either one you have created, or one that you would like to see added
-- Documentation Improvement: Report wrong or missing documentation
-- Feature Request: Suggest an idea for BioCypher
+- [Add New BioChatter Model](https://github.com/biocypher/biochatter/issues/new?template=benchmark-model-request.md): Request to add a new model to the benchmark
+- **Documentation Improvement**: Report wrong or missing documentation
+- **Feature Request**: Suggest an idea for BioCypher
 
 ## :octicons-checklist-24:{ .lg .middle } Detailed Guides
 
