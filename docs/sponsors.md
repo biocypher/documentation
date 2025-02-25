@@ -9,6 +9,7 @@ We are fortunate to have received support from the following institutions and co
 - Open Targets (EMBL-EBI)
 - Helmholtz Association
 - German Centre for Diabetes Research (DZD)
+- German Network University Medicine (NUM)
 - GitHub
 - Docker
 - Zulip
