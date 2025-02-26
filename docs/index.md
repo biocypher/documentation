@@ -3,7 +3,11 @@
 !!! warning
 
     This unified documentation is currently under construction. Please check the
-    docs of the individual projects for now.
+    docs of the individual projects for now:
+
+    - [BioCypher](https://biocypher.org)
+    
+    - [BioChatter](https://biochatter.org)
 
 Welcome to the unified documentation for the BioCypher ecosystem.  Our mission
 is to facilitate research, particularly in biology and medicine, by streamlining
