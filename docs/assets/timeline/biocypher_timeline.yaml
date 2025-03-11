@@ -38,13 +38,13 @@
   title: Journal publication
 - content: |
     ELIXIR BioHackathon Europe 2024—Bioconductor, EDAM Ontology, and bio.tools.  
-    [:octicons-arrow-right-24: preprint coming soon]()
+    [:octicons-arrow-right-24: Preprint coming soon]()
   icon: ":material-code-tags:"
   sub_title: "2024-11-04"
   title: Hackathon
 - content: |
     ELIXIR Plant community hackathon in Versailles.  
-    [:octicons-arrow-right-24: preprint coming soon]()
+    [:octicons-arrow-right-24: Preprint](https://doi.org/10.37044/osf.io/m7xr6_v1)
   icon: ":material-code-tags:"
   sub_title: "2024-11-11"
   title: Hackathon
