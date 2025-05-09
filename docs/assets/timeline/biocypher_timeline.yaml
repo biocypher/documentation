@@ -62,6 +62,12 @@
   icon: ":material-rocket-launch-outline:"
   sub_title: "2025-02-10"
   title: BioGather Launch
+- content: |
+    Clinical benchmarking study preprint published.  
+    [:octicons-arrow-right-24: Preprint](https://doi.org/10.20944/preprints202504.2458.v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2025-05-09"
+  title: Preprint publication
 - content: BioGather preprint v1 published on arXiv.
   icon: ":material-file-document-plus-outline:"
   sub_title: "Soon"
