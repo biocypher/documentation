@@ -85,3 +85,12 @@ This documentation covers:
     **Coming soon.**
 
 </div>
+
+!!! info
+
+    This documentation is composed of the individual docs for the single
+    packages. These individual docs are also hosted individually, which enables
+    a versioned documentation history and direct editing functionality. If you
+    need this, go to the individual
+    [BioCypher](https://biocypher.github.io/biocypher) and
+    [BioChatter](https://biochatter.org) docs directly.
