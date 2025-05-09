@@ -1,9 +1,9 @@
 # The BioCypher Ecosystem
 
-Welcome to the unified documentation for the BioCypher ecosystem.  Our mission
-is to facilitate research, particularly in biology and medicine, by streamlining
-the scientific workflow.  We do this by providing a suite of tools that help
-manage knowledge in various ways.
+Welcome to the integrated documentation for the BioCypher ecosystem. Our
+mission is to facilitate research, particularly in biology and medicine, by
+streamlining the scientific workflow. We do this by providing a suite of tools
+that help manage knowledge in various ways.
 
 <div class="grid cards grid-2" markdown>
 
