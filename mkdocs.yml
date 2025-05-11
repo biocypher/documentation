@@ -11,8 +11,6 @@ theme:
     - content.code.copy
     - navigation.footer
     - content.action.edit
-    - search.suggest
-    - search.highlight
     - toc.integrate
 
   palette:
@@ -44,13 +42,15 @@ nav:
 
   - BioChatter: "!include ./biochatter/mkdocs.nav.yml"
 
+  - Biotope: "!include ./biotope/mkdocs.nav.yml"
+
 plugins:
   - search
   - include-markdown
   - mkdocstrings:
       handlers:
         python:
-          paths: [., biocypher, biochatter]
+          paths: [., biocypher, biochatter, biotope]
   - monorepo
   - table-reader
   - mkdocs-jupyter
