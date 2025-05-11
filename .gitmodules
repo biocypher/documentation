@@ -4,3 +4,6 @@
 [submodule "biochatter"]
 	path = biochatter
 	url = https://github.com/biocypher/biochatter
+[submodule "biotope"]
+	path = biotope
+	url = https://github.com/biocypher/biotope
