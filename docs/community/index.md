@@ -45,3 +45,14 @@ location. How to synchronise them? -->
 - [Code of Conduct](https://github.com/biocypher/biocypher/blob/main/CODE_OF_CONDUCT.md)
 
 - [Developer Guide](https://github.com/biocypher/biocypher/blob/main/DEVELOPER.md)
+
+## Our Organisations
+
+We maintain several organisations to host our resources and packages. If you
+are interested in adding your project to the ecosystem (e.g., a Zenodo record
+that is related), please let us know or use the existing submission mechanisms.
+
+- [GitHub](https://github.com/biocypher): Find our repositories
+- [Zenodo](https://zenodo.org/communities/biocypher/records?q=&l=list&p=1&s=10&sort=newest): Find our published datasets and software releases
+- [PyPI](https://pypi.org/org/biocypher/): Access our Python packages
+- [Docker Hub](https://hub.docker.com/orgs/biocypher/): Access our Docker images
