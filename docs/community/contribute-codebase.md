@@ -358,3 +358,31 @@ request by pushing to the branch on GitHub:
 
 Any `git push` will automatically update your pull request with your branch's
 changes and restart the `Continuous Integration` checks.
+
+## Merging a Pull Request and Versioning
+
+The procedure to merge a PR with version increase according to semantic
+versioning is as follows:
+
+1. The PR is made, discussed, and approved according to the collaborators'
+standards. A bump severity (patch, minor, major) is chosen according to the
+changes and SemVer standards.
+
+```note
+Before the first major version (<1.0.0), most changes, even if significant, only
+result in a minor version increase. The first major version release typically
+needs to be delineated as a long-term milestone.
+```
+
+2. As a last action in the PR before the merge, the version bump is executed.
+Usually via means of `bump2version` or, more recently `uv` and Makefile setup.
+The version is not manually changed in most cases. Both setups typically also
+create a *git tag* with the version in SemVer format, which can be pushed
+separately via `git push --tags`. The version bump can also be performed in a
+separate PR, if missed in the code-carrying PR.
+
+3. The PR is merged, introducing a new version in the codebase (but not yet as a
+release or published package). To release and publish the package, we rely on
+GitHub actions that automatically draft a release and trigger a build and
+publish action to PyPI. The trigger for these actions is the `git push --tags`
+command, the pattern of which is matched in the GitHub workflow.
