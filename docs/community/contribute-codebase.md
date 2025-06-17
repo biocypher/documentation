@@ -368,11 +368,11 @@ versioning is as follows:
 standards. A bump severity (patch, minor, major) is chosen according to the
 changes and SemVer standards.
 
-```note
-Before the first major version (<1.0.0), most changes, even if significant, only
-result in a minor version increase. The first major version release typically
-needs to be delineated as a long-term milestone.
-```
+!!! info
+
+    Before the first major version (<1.0.0), most changes, even if significant,
+    only result in a minor version increase. The first major version release
+    typically needs to be delineated as a long-term milestone.
 
 2. As a last action in the PR before the merge, the version bump is executed.
 Usually via means of `bump2version` or, more recently `uv` and Makefile setup.
