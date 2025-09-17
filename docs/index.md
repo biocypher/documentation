@@ -66,6 +66,18 @@ This documentation covers:
 
 <div class="grid cards" markdown>
 
+-   :material-view-dashboard-edit-outline:{ .lg .middle } __BioContext__
+
+    ---
+
+    A community registry for biomedical MCP servers.
+    
+    [:octicons-arrow-right-24: To the registry homepage](https://biocontext.ai)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   :material-magnify-expand:{ .lg .middle } __BioGather__
 
     ---

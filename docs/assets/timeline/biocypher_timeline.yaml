@@ -68,6 +68,22 @@
   icon: ":material-file-document-plus-outline:"
   sub_title: "2025-05-09"
   title: Preprint publication
+- content: |
+    BioContext preprint published.  
+    [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2025.07.21.665729v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2025-05-09"
+  title: Preprint publication
+- content: |
+    ELIXIR BioHackathon Europe 2025; contributions to EDAM Ontology MCP.
+  icon: ":material-code-tags:"
+  sub_title: "2025-11-03"
+  title: Hackathon
+- content: |
+    ELIXIR BioHackathon Germany 2025; contributions to BioCypher / BioChatter.
+  icon: ":material-code-tags:"
+  sub_title: "2025-12-01"
+  title: Hackathon
 - content: BioGather preprint v1 published on arXiv.
   icon: ":material-file-document-plus-outline:"
   sub_title: "Soon"
