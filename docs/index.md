@@ -38,6 +38,19 @@ that help manage knowledge in various ways.
 
 </div>
 
+!!! alert "Featured event:"
+<div class="grid cards" markdown>
+
+-   :material-school-outline:{ .lg .middle } __Workshop "Establishing a knowledge graph community in biomedical science"__
+
+    ---
+
+    Join our upcoming workshop in Heidelberg, June 2026! Travel grants are available.
+
+    [:octicons-arrow-right-24: Workshop information](./community/2026-workshop.md)
+
+</div>
+
 This documentation covers:
 
 <div class="grid cards" markdown>
