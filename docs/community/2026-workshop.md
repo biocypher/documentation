@@ -27,6 +27,9 @@ Learn how to create knowledge graphs from your data and import them into a graph
 
 </div>
 
+## Invited speakers
+Stay tuned for the list of invited speakers and the workshop program!
+
 ## Prerequisites
 
 !!! warning "Requirements"
