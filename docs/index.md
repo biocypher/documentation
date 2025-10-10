@@ -40,7 +40,7 @@ that help manage knowledge in various ways.
 
 !!! tip "Featured workshop: Establishing a knowledge graph community in biomedical science"
 
-    Join our upcoming workshop in Heidelberg, June 5-19, 2026! Travel grants are available.
+    Join our upcoming user workshop in Heidelberg, June 5-19, 2026! Travel grants are available.
 
     [:octicons-arrow-right-24: Workshop information](./community/2026-workshop.md)
 
