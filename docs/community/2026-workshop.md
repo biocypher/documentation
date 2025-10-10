@@ -23,6 +23,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
 - :material-file-tree: **Ontologies**
 - :material-vector-triangle: **Graph representations**
 - :material-brain: **Knowledge extraction**
+- :material-chat-processing-outline: **Agentic automation**
 
 </div>
 
