@@ -38,4 +38,7 @@ Stay tuned for the list of invited speakers and the workshop program!
 
 ## Registration
 
+!!! warning "Registration site currently not reachable"
+    Due to currently active security measures with the IT at Heidelberg University, registration is not possible from outside the network at the moment. The issues are currently being resolved. Please check back later or send an email to `inga.ulusoy@uni-heidelberg.de` with your registration request.
+    
 [Register for the Workshop :material-arrow-right:](https://limesurvey.urz.uni-heidelberg.de/index.php/452584?lang=en){ .md-button .md-button--primary }
