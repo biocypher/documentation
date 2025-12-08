@@ -1,23 +1,71 @@
-- content: Start of BioCypher development.
-  icon: ":material-rocket-launch-outline:"
-  sub_title: "2021-09-10"
-  title: BioCypher Launch
 - content: |
-    BioCypher preprint v1 published on [arXiv](https://arxiv.org/abs/2212.13543).  
-    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2212.13543)
-  icon: ":material-file-document-plus-outline:"
-  sub_title: "2022-12-27"
-  title: Preprint publication
-- content: BioChatter start of development.
-  icon: ":material-rocket-launch-outline:"
-  sub_title: "2023-04-03"
-  title: BioChatter Launch
+    ELIXIR BioHackathon Germany 2025; contributions to BioCypher / BioChatter to [load systems biology models](https://github.com/BioCypher/sys-bio-kgs).
+  icon: ":material-code-tags:"
+  sub_title: "2025-12-01"
+  title: Hackathon
 - content: |
-    BioChatter preprint v1 published on [arXiv](https://arxiv.org/abs/2305.06488).  
-    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2305.06488)
+    BioContext published in [Nature Biotechnology](https://www.nature.com/articles/s41587-025-02900-9). Website launched at [biocontext.ai](https://biocontext.ai).
   icon: ":material-file-document-plus-outline:"
-  sub_title: "2023-05-10"
+  sub_title: "2025-11-06"
+  title: Journal publication
+- content: |
+    ELIXIR BioHackathon Europe 2025; contributions to [EDAM Ontology MCP server](https://github.com/edamontology/edammcp).
+  icon: ":material-code-tags:"
+  sub_title: "2025-11-03"
+  title: Hackathon
+- content: |
+    Medical benchmarking study publised in [npj Digital Medicine](https://www.nature.com/articles/s41746-025-01996-2).
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2025-10-27"
+  title: Journal publication
+- content: |
+    BioContext preprint published.  
+    [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2025.07.21.665729v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2025-07-25"
   title: Preprint publication
+- content: |
+    Clinical benchmarking study preprint published.  
+    [:octicons-arrow-right-24: Preprint](https://doi.org/10.20944/preprints202504.2458.v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2025-04-29"
+  title: Preprint publication
+- content: BioGather start of development.
+  icon: ":material-rocket-launch-outline:"
+  sub_title: "2025-02-10"
+  title: BioGather Launch
+- content: |
+    BioChatter peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-024-02534-3).  
+    [:octicons-arrow-right-24: Self-archived here](https://zenodo.org/records/15684945)
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2025-01-22"
+  title: Journal publication
+- content: ELIXIR BioHackathon Germany 2024; contributions to BioChatter manuscript.
+  icon: ":material-code-tags:"
+  sub_title: "2024-12-09"
+  title: Hackathon
+- content: |
+    ELIXIR Plant community hackathon in Versailles.  
+    [:octicons-arrow-right-24: Preprint](https://doi.org/10.37044/osf.io/m7xr6_v1)
+  icon: ":material-code-tags:"
+  sub_title: "2024-11-11"
+  title: Hackathon
+- content: |
+    ELIXIR BioHackathon Europe 2024—Bioconductor, EDAM Ontology, and bio.tools.  
+    [:octicons-arrow-right-24: Preprint](https://doi.org/10.37044/osf.io/dsgnw_v1)
+  icon: ":material-code-tags:"
+  sub_title: "2024-11-04"
+  title: Hackathon
+- content: |
+    Perspective on molecular causality in the advent of foundation models in [EMBO Molecular Systems Biology](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w).  
+    [:octicons-arrow-right-24: Read it here](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w)
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2024-06-18"
+  title: Journal publication
+- content: ELIXIR BioHackathon Germany 2023; contributions to BioChatter manuscript.
+  icon: ":material-code-tags:"
+  sub_title: "2023-12-11"
+  title: Hackathon
 - content: |
     BioCypher peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-023-01848-y).  
     [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-023-01848-y)  
@@ -26,65 +74,23 @@
   icon: ":material-file-document-check-outline:"
   sub_title: "2023-06-19"
   title: Journal publication
-- content: ELIXIR BioHackathon Germany 2023; contributions to BioChatter manuscript.
-  icon: ":material-code-tags:"
-  sub_title: "2023-12-11"
-  title: Hackathon
 - content: |
-    Perspective on molecular causality in the advent of foundation models in [EMBO Molecular Systems Biology](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w).  
-    [:octicons-arrow-right-24: Read it here](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w)
-  icon: ":material-file-document-check-outline:"
-  sub_title: "2024-06-18"
-  title: Journal publication
-- content: |
-    ELIXIR BioHackathon Europe 2024—Bioconductor, EDAM Ontology, and bio.tools.  
-    [:octicons-arrow-right-24: Preprint](https://doi.org/10.37044/osf.io/dsgnw_v1)
-  icon: ":material-code-tags:"
-  sub_title: "2024-11-04"
-  title: Hackathon
-- content: |
-    ELIXIR Plant community hackathon in Versailles.  
-    [:octicons-arrow-right-24: Preprint](https://doi.org/10.37044/osf.io/m7xr6_v1)
-  icon: ":material-code-tags:"
-  sub_title: "2024-11-11"
-  title: Hackathon
-- content: ELIXIR BioHackathon Germany 2024; contributions to BioChatter manuscript.
-  icon: ":material-code-tags:"
-  sub_title: "2024-12-09"
-  title: Hackathon
-- content: |
-    BioChatter peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-024-02534-3).  
-    [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-024-02534-3)
-  icon: ":material-file-document-check-outline:"
-  sub_title: "2025-01-22"
-  title: Journal publication
-- content: BioGather start of development.
+    BioChatter preprint v1 published on [arXiv](https://arxiv.org/abs/2305.06488).  
+    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2305.06488)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2023-05-10"
+  title: Preprint publication
+- content: BioChatter start of development.
   icon: ":material-rocket-launch-outline:"
-  sub_title: "2025-02-10"
-  title: BioGather Launch
+  sub_title: "2023-04-03"
+  title: BioChatter Launch
 - content: |
-    Clinical benchmarking study preprint published.  
-    [:octicons-arrow-right-24: Preprint](https://doi.org/10.20944/preprints202504.2458.v1)
+    BioCypher preprint v1 published on [arXiv](https://arxiv.org/abs/2212.13543).  
+    [:octicons-arrow-right-24: Read it here](https://arxiv.org/abs/2212.13543)
   icon: ":material-file-document-plus-outline:"
-  sub_title: "2025-05-09"
+  sub_title: "2022-12-27"
   title: Preprint publication
-- content: |
-    BioContext preprint published.  
-    [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2025.07.21.665729v1)
-  icon: ":material-file-document-plus-outline:"
-  sub_title: "2025-05-09"
-  title: Preprint publication
-- content: |
-    ELIXIR BioHackathon Europe 2025; contributions to EDAM Ontology MCP.
-  icon: ":material-code-tags:"
-  sub_title: "2025-11-03"
-  title: Hackathon
-- content: |
-    ELIXIR BioHackathon Germany 2025; contributions to BioCypher / BioChatter.
-  icon: ":material-code-tags:"
-  sub_title: "2025-12-01"
-  title: Hackathon
-- content: BioGather preprint v1 published on arXiv.
-  icon: ":material-file-document-plus-outline:"
-  sub_title: "Soon"
-  title: Preprint publication
+- content: Start of BioCypher development.
+  icon: ":material-rocket-launch-outline:"
+  sub_title: "2021-09-10"
+  title: BioCypher Launch
