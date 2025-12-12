@@ -24,6 +24,10 @@
   icon: ":material-file-document-plus-outline:"
   sub_title: "2025-07-25"
   title: Preprint publication
+- content: Karenina start of development.
+  icon: ":material-rocket-launch-outline:"
+  sub_title: "2025-06-27"
+  title: Karenina Launch
 - content: |
     Clinical benchmarking study preprint published.  
     [:octicons-arrow-right-24: Preprint](https://doi.org/10.20944/preprints202504.2458.v1)
