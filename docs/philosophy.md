@@ -105,7 +105,7 @@ By using enriched schema context (preferably `schema_info.yaml`), BioChatter ach
 - **Better explanations**: The system can explain queries using project-specific terminology
 - **Smarter selection**: Understanding which concepts are actually in the data helps avoid queries for non-existent entities
 
-### 3. Biotope: Project Context Management
+### 4. Biotope: Project Context Management
 
 !!! info "Biotope Status"
     Biotope is currently a **prototype** with limited functionality, designed for developer use and prototyping. The API is subject to change as we refine the tool based on user feedback and requirements.
@@ -120,6 +120,7 @@ Currently, Biotope provides prototype implementations for:
 - **Metadata annotation**: `biotope annotate` helps annotate data with consistent metadata using Croissant ML
 - **File management**: `biotope get` downloads files and automatically starts annotation
 - **Basic integration**: Initial integration points for BioCypher and BioChatter workflows
+- **Context-aware tool discovery**: A search prototype that leverages project context to help users find the right tools by querying the BioContext registry (for biomedical MCP servers and agent tools) as well as public APIs like bio.tools
 
 #### Context Preservation
 
@@ -161,7 +162,7 @@ graph LR
     style F fill:#f3e5f5
 ```
 
-### 4. BioGather: Context-Informed Extraction (Future)
+### 5. BioGather: Context-Informed Extraction (Future)
 
 BioGather, an upcoming extraction tool, will leverage project context to:
 

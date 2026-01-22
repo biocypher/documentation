@@ -54,7 +54,7 @@ This documentation covers:
 
     A framework for the creation of knowledge graphs in biology and medicine.
 
-    [:octicons-arrow-right-24: To the BioCypher documentation](BioCypher)
+    [:octicons-arrow-right-24: To the BioCypher documentation](BioCypher/index.md)
 
 </div>
 
@@ -66,7 +66,7 @@ This documentation covers:
 
     A framework for building biomedical AI agents.
 
-    [:octicons-arrow-right-24: To the BioChatter documentation](BioChatter)
+    [:octicons-arrow-right-24: To the BioChatter documentation](BioChatter/index.md)
 
 </div>
 
@@ -101,7 +101,7 @@ This documentation covers:
 
     A unified interface for accessing BioCypher ecosystem resources.
     
-    [:octicons-arrow-right-24: Biotope in draft stage](Biotope)
+    [:octicons-arrow-right-24: Biotope in draft stage](Biotope/index.md)
 
 </div>
 
