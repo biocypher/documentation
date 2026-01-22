@@ -1,28 +1,33 @@
-[tool.poetry]
+[project]
 name = "biocypher-docs"
 version = "0.1.0"
 description = "Unified documentation for the BioCypher ecosystem"
-authors = ["Sebastian Lobentanzer <sebastian.lobentanzer@gmail.com>"]
+authors = [
+    {name = "Sebastian Lobentanzer", email = "sebastian.lobentanzer@gmail.com"}
+]
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "mkdocs-material[imaging]>=9.5.10",
+    "mkdocs-monorepo-plugin>=1.1.0",
+    "mkdocstrings[python]>=0.24.0",
+    "mkdocstrings-python>=1.7.0",
+    "mkdocs-include-markdown-plugin>=7.1.4",
+    "griffe>=0.36.3",
+    "neoteroi-mkdocs>=1.1.0",
+    "mkdocs-table-reader-plugin>=3.1.0",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-redirects>=1.2.2",
+    "colorcet>=3.1.0",
+    "matplotlib>=3.10.0",
+    "seaborn>=0.13.2",
+    "scipy>=1.15.2",
+    "pandas",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.10,<4.0"
-mkdocs-material = {extras = ["imaging"], version = "^9.5.10"}
-mkdocs-monorepo-plugin = "^1.1.0"
-mkdocstrings = {version = ">=0.24.0", extras = ["python"]}
-mkdocstrings-python = "^1.7.0"
-mkdocs-include-markdown-plugin = "^7.1.4"
-griffe = ">=0.36.3"
-neoteroi-mkdocs = "^1.1.0"
-mkdocs-table-reader-plugin = "^3.1.0"
-mkdocs-jupyter = "^0.25.1"
-mkdocs-redirects = "^1.2.2"
-colorcet = "^3.1.0"
-matplotlib = "^3.10.0"
-seaborn = "^0.13.2"
-scipy = "^1.15.2"
+[tool.hatch.build.targets.wheel]
+packages = ["biocypher_docs"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api" 
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -23,6 +23,6 @@ git submodule update --init --recursive
 ## Local Development
 
 ```bash
-poetry install
-poetry run mkdocs serve
+uv sync
+uv run mkdocs serve
 ```
