@@ -30,6 +30,7 @@ theme:
 nav:
   - About:
       - "": index.md
+      - Philosophy: philosophy.md
       - Timeline and Publications: project.md
       - Sponsors: sponsors.md
       - Community:
