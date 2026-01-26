@@ -31,11 +31,12 @@ Learn how to create knowledge graphs from your data and import them into a graph
 ## Confirmed speakers
 
 - Jan Baumbach, University of Hamburg, Germany 
-- Alberto Santos Delgado, Technical University of Denmark, Copenhagen  
+- Alberto Santos Delgado, Technical University of Denmark, Copenhagen, Denmark  
 - Tunca Dogan, Hacettepe University, Ankara, Turkey 
 - Johann Dreo, Institut Pasteur, Paris, France 
 - Claire Laudy, Thales & Institut Pasteur, Paris, France 
 - Sebastian Lobentanzer, Helmholtz Munich, Germany 
+- Steffen Vogler, Bayer AG, Berlin, Germany
 - Judith Wodke, Universität Greifswald, Germany 
 
 Stay tuned for updates to the workshop program!
