@@ -33,7 +33,8 @@ Learn how to create knowledge graphs from your data and import them into a graph
 - Jan Baumbach, University of Hamburg, Germany 
 - Alberto Santos Delgado, Technical University of Denmark, Copenhagen, Denmark  
 - Tunca Dogan, Hacettepe University, Ankara, Turkey 
-- Johann Dreo, Institut Pasteur, Paris, France 
+- Johann Dreo, Institut Pasteur, Paris, France
+- Carl Herrmann, Heidelberg University, Heidelberg, Germany
 - Claire Laudy, Thales & Institut Pasteur, Paris, France 
 - Sebastian Lobentanzer, Helmholtz Munich, Germany 
 - Steffen Vogler, Bayer AG, Berlin, Germany
@@ -47,5 +48,6 @@ Stay tuned for updates to the workshop program!
     Familiarity with ontologies and/or knowledge graphs and/or Python is helpful. You need to bring a laptop with a working Python installation and an IDE such as VSCode.
 
 ## Registration
+Registration closes on May 15th, 2026 at 11:59PM CET. Travel awards will be announced by May 22nd, 2026.
 
 [Register for the Workshop :material-arrow-right:](https://limesurvey.urz.uni-heidelberg.de/index.php/452584?lang=en){ .md-button .md-button--primary }
