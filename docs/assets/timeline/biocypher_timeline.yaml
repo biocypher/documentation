@@ -73,6 +73,10 @@
   icon: ":material-code-tags:"
   sub_title: "2024-11-04"
   title: Hackathon
+- content: OntoWeaver [conference publication](https://doi.org/10.23919/FUSION59988.2024.10706497) at IEEE.
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2024-09-10"
+  title: Conference publication
 - content: |
     Perspective on molecular causality in the advent of foundation models in [EMBO Molecular Systems Biology](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w).  
     [:octicons-arrow-right-24: Read it here](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w)
@@ -83,6 +87,10 @@
   icon: ":material-code-tags:"
   sub_title: "2023-12-11"
   title: Hackathon
+- content: OntoWeaver start of development.
+  icon: ":material-rocket-launch-outline:"
+  sub_title: "2023-09-01"
+  title: OntoWeaver Launch
 - content: |
     BioCypher peer-reviewed in [Nature Biotechnology](https://www.nature.com/articles/s41587-023-01848-y).  
     [:octicons-arrow-right-24: Read it here](https://www.nature.com/articles/s41587-023-01848-y)  
