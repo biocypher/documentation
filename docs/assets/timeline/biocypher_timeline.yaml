@@ -1,4 +1,17 @@
 - content: |
+    User workshop on establishing a knowledge graph community in biomedical science.  
+    [:octicons-arrow-right-24: Workshop information](https://biocypher.org/community/2026-workshop/)
+  icon: ":material-calendar-range:"
+  sub_title: "2026-06-15"
+  title: Workshop
+- content: |
+    [Agentic Automation Canvas (AAC)](https://aac.slolab.ai) double feature preprint.  
+    [:octicons-arrow-right-24: AAC Manuscript](https://arxiv.org/abs/2602.15090)  
+    [:octicons-arrow-right-24: Expectation–Realisation Gap Review](https://arxiv.org/abs/2602.20292)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2026-02-26"
+  title: Preprint publication
+- content: |
     ELIXIR BioHackathon Germany 2025; contributions to BioCypher / BioChatter to [load systems biology models](https://github.com/BioCypher/sys-bio-kgs).
   icon: ":material-code-tags:"
   sub_title: "2025-12-01"
