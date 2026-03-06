@@ -51,3 +51,13 @@ Stay tuned for updates to the workshop program!
 Registration closes on May 15th, 2026 at 11:59PM CET. Travel awards will be announced by May 22nd, 2026.
 
 [Register for the Workshop :material-arrow-right:](https://limesurvey.urz.uni-heidelberg.de/index.php/452584?lang=en){ .md-button .md-button--primary }
+
+## Financial support
+
+This workshop would not be possible without funding through the German Science Foundation DFG through project number 528753569. We gratefully acknowledge sponsorship from the [International Society for Information Fusion (ISIF)](https://isif.org/).
+
+<div>
+<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_de.png" alt="Funding through DFG" width="400">
+
+<img src="/assets/img/ISIF-logo.png" alt="Sponsored by ISIF" width="400">
+</div>
