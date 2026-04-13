@@ -28,7 +28,201 @@ Learn how to create knowledge graphs from your data and import them into a graph
 
 </div>
 
-## Confirmed speakers
+
+## Workshop program
+
+=== "Monday"
+    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>09:15-10:45</td>
+                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>11:00-12:30</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">lunch break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>13:30-15:00</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>15:15-16:45</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+        </tbody>
+    </table>
+
+=== "Tuesday"
+    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>09:15-10:45</td>
+                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>11:00-12:30</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">lunch break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>13:30-15:00</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>15:15-16:45</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+        </tbody>
+    </table>
+
+=== "Wednesday"
+    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>09:15-10:45</td>
+                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>11:00-12:30</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">lunch break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>13:30-15:00</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>15:15-16:45</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+        </tbody>
+    </table>
+
+=== "Thursday"
+    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>09:15-10:45</td>
+                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>11:00-12:30</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">lunch break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>13:30-15:00</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>15:15-16:45</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+        </tbody>
+    </table>
+
+=== "Friday"
+    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>09:15-10:45</td>
+                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+            </tr>
+            <tr>
+                <td colspan="2">coffee break</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td>11:00-12:30</td>
+                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+            </tr>
+        </tbody>
+    </table>
+
+## Workshop speakers
 
 - Jan Baumbach, University of Hamburg, Germany 
 - Alberto Santos Delgado, Technical University of Denmark, Copenhagen, Denmark  
