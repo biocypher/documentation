@@ -32,7 +32,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
 ## Workshop program
 
 === "Monday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -73,7 +73,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
     </table>
 
 === "Tuesday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -114,7 +114,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
     </table>
 
 === "Wednesday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -159,7 +159,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
     </table>
 
 === "Thursday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -200,7 +200,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
     </table>
 
 === "Friday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -221,7 +221,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>Quantify participant achievements, feedback and workshop closing"</td>
+                <td>Quantify participant achievements, feedback and workshop closing</td>
             </tr>
         </tbody>
     </table>
