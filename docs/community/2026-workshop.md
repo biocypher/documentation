@@ -32,7 +32,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
 ## Workshop program
 
 === "Monday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -42,11 +42,11 @@ Learn how to create knowledge graphs from your data and import them into a graph
         <tbody>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>09:15-10:45</td>
-                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+                <td>Sebastian Lobentanzer (Helmholtz Munich), "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td></td>
-                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+                <td>Steffen Vogler (Bayer AG, Berlin), "Knowledge management with BioCroissant and agentic automation"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
@@ -73,7 +73,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
     </table>
 
 === "Tuesday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -83,38 +83,38 @@ Learn how to create knowledge graphs from your data and import them into a graph
         <tbody>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>09:15-10:45</td>
-                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+                <td>Jan Baumbach (University of Hamburg, online), "Network Medicine GPT - A knowledge-graph based transformer for drug repurposing and disease module mining"</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td></td>
-                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+                <td>Johann Dreo (Institut Pasteur, Paris), "Explainable AI against Cancer - OntoWeaver's driving use-case"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Hands-on OntoWeaver" (Johann Dreo)</td>
             </tr>
             <tr>
                 <td colspan="2">lunch break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>13:30-15:00</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Adapters in BioCypher"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "BioCypher MCP"</td>
             </tr>
         </tbody>
     </table>
 
 === "Wednesday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -124,38 +124,42 @@ Learn how to create knowledge graphs from your data and import them into a graph
         <tbody>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>09:15-10:45</td>
-                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+                <td>Carl Herrmann (Heidelberg University), "Strategies for building domain specific knowledge for single-cell genomics"</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td></td>
-                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+                <td>Judith Wodke (University Medicine Greifswald), "MeDaX-KG: The bioMedical Data eXploration Knowledge Graph"</td>
+            </tr>
+            <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
+                <td></td>
+                <td>Alberto Santos Delgado (Technical University of Denmark, Copenhagen), "Unlocking Disease Mechanisms via Microbial Graph Analysis"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Agentic API in BioCypher"</td>
             </tr>
             <tr>
                 <td colspan="2">lunch break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>13:30-15:00</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Harmonizing biomedical data"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Harmonizing biomedical data"</td>
             </tr>
         </tbody>
     </table>
 
 === "Thursday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -165,38 +169,38 @@ Learn how to create knowledge graphs from your data and import them into a graph
         <tbody>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>09:15-10:45</td>
-                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+                <td>Tunca Dogan (Hacettepe University, Ankara), "Knowledge Graphs as AI-Ready Substrates: Integrating Heterogeneous Biomedical Data for Scalable Discovery and Reasoning"</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td></td>
-                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+                <td>Claire Laudy (ISIF & Institut Pasteur, Paris), "What is high-level information fusion, and why is it important?"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "OntoWeaver's fusion module (Johann Dreo)"</td>
             </tr>
             <tr>
                 <td colspan="2">lunch break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>13:30-15:00</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "Building Adapters in BioCypher"</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>hands-on session: "AI-supported open-source software development"</td>
             </tr>
         </tbody>
     </table>
 
 === "Friday"
-    <table style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
+    <table class="workshop-program-table" style="border-collapse:separate; border-spacing:0; border:1px solid var(--md-primary-fg-color); border-radius:0.6rem; overflow:hidden;">
         <thead>
             <tr>
                 <th>Time</th>
@@ -206,18 +210,18 @@ Learn how to create knowledge graphs from your data and import them into a graph
         <tbody>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>09:15-10:45</td>
-                <td>Sebastian Lobentanzer, "The BioCypher ecosystem: Democratizing knowledge graphs"</td>
+                <td>Workshop Highlights</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td></td>
-                <td>Steffen Vogler, "Knowledge management with BioCroissant and agentic automation"</td>
+                <td>Contributing to BioCypher on GitHub</td>
             </tr>
             <tr>
                 <td colspan="2">coffee break</td>
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Knowledge graphs and BioCypher"</td>
+                <td>Quantify participant achievements, feedback and workshop closing</td>
             </tr>
         </tbody>
     </table>
@@ -233,8 +237,6 @@ Learn how to create knowledge graphs from your data and import them into a graph
 - Sebastian Lobentanzer, Helmholtz Munich, Germany 
 - Steffen Vogler, Bayer AG, Berlin, Germany
 - Judith Wodke, University Medicine Greifswald, Germany 
-
-Stay tuned for updates to the workshop program!
 
 ## Prerequisites
 
