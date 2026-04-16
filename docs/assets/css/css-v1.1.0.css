@@ -1294,6 +1294,17 @@ details .nt-timeline.vertical.center:not(.alternate) .nt-timeline-item .nt-timel
   transition: background-color 125ms;
 }
 
+.workshop-program-table {
+  width: 70%;
+  max-width: 70%;
+  table-layout: fixed;
+}
+
+.workshop-program-table th:first-child,
+.workshop-program-table td:first-child {
+  width: 10.5rem;
+}
+
 .nt-contribs {
   margin-top: 2rem;
   font-size: small;
@@ -1505,4 +1516,25 @@ details .nt-timeline.vertical.center:not(.alternate) .nt-timeline-item .nt-timel
 }
 .nt-contribs .nt-group-49 {
   background-color: var(--nt-color-49);
+}
+
+@media print {
+  .tabbed-labels,
+  .tabbed-set > input {
+    display: none !important;
+  }
+
+  .tabbed-content {
+    display: block !important;
+  }
+
+  .tabbed-content > .tabbed-block {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: none !important;
+    overflow: visible !important;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
 }
