@@ -1,9 +1,26 @@
 - content: |
+    ELIXIR BioHackathon Europe 2026; Biotope-driven construction of an ELIXIR knowledge graph.
+  icon: ":material-code-tags:"
+  sub_title: "2026-11-19"
+  title: Hackathon
+- content: |
     User workshop on establishing a knowledge graph community in biomedical science.  
     [:octicons-arrow-right-24: Workshop information](https://biocypher.org/community/2026-workshop/)
   icon: ":material-calendar-range:"
   sub_title: "2026-06-15"
   title: Workshop
+- content: |
+    TomTom (integrated tomato knowledge graph) peer-reviewed in [New Phytologist](TBD).  
+    [:octicons-arrow-right-24: Preprint here](https://www.biorxiv.org/content/10.1101/2025.04.09.647963v1)
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2026-06-01"
+  title: Journal publication
+- content: |
+    IggyTop release (immune receptor signalling knowledge graph).
+    [:octicons-arrow-right-24: IggyTop](https://iggytop.readthedocs.io/en/latest/)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2026-05-01"
+  title: Release
 - content: |
     [Agentic Automation Canvas (AAC)](https://aac.slolab.ai) double feature preprint.  
     [:octicons-arrow-right-24: AAC Manuscript](https://arxiv.org/abs/2602.15090)  
@@ -47,6 +64,12 @@
   icon: ":material-file-document-plus-outline:"
   sub_title: "2025-04-29"
   title: Preprint publication
+- content: |
+    Integrated tomato knowledge graph preprint published.  
+    [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2025.04.09.647963v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2025-05-15"
+  title: Preprint publication
 - content: BioGather start of development.
   icon: ":material-rocket-launch-outline:"
   sub_title: "2025-02-10"
@@ -78,11 +101,22 @@
   sub_title: "2024-09-10"
   title: Conference publication
 - content: |
+    MetaLinksDB peer-reviewed in [Briefings in Bioinformatics](https://doi.org/10.1093/bib/bbae347).  
+  icon: ":material-file-document-check-outline:"
+  sub_title: "2024-06-22"
+  title: Journal publication
+- content: |
     Perspective on molecular causality in the advent of foundation models in [EMBO Molecular Systems Biology](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w).  
     [:octicons-arrow-right-24: Read it here](https://www.embopress.org/doi/full/10.1038/s44320-024-00041-w)
   icon: ":material-file-document-check-outline:"
   sub_title: "2024-06-18"
   title: Journal publication
+- content: |
+    Metabolism knowledge graph preprint published (MetaLinks).  
+    [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2023.12.30.573715v1)
+  icon: ":material-file-document-plus-outline:"
+  sub_title: "2023-12-30"
+  title: Preprint publication
 - content: ELIXIR BioHackathon Germany 2023; contributions to BioChatter manuscript.
   icon: ":material-code-tags:"
   sub_title: "2023-12-11"
