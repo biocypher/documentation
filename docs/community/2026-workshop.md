@@ -139,7 +139,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Agentic API in BioCypher"</td>
+                <td>hands-on session: "AI-supported open-source software development"</td>
             </tr>
             <tr>
                 <td colspan="2">lunch break</td>
@@ -194,7 +194,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "AI-supported open-source software development"</td>
+                <td>hands-on session: "BioChatter, Biotope and more (Sebastian Lobentanzer)"</td>
             </tr>
         </tbody>
     </table>
@@ -221,7 +221,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>Quantify participant achievements, feedback and workshop closing</td>
+                <td>Achievements, feedback and workshop closing</td>
             </tr>
         </tbody>
     </table>
