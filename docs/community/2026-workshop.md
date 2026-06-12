@@ -153,7 +153,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "Harmonizing biomedical data"</td>Building Adapters in BioCypher
+                <td>hands-on session: "Harmonizing biomedical data"</td>
             </tr>
         </tbody>
     </table>
