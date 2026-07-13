@@ -1,8 +1,18 @@
 # Workshop "Establishing a knowledge graph community in biomedical science"
 
-!!! info "Workshop Information"
-    :material-calendar-range: **Date:** 15-19.06.2026  
-    :material-map-marker: **Place:** Heidelberg, Im Neuenheimer Feld 205
+This workshop took place in June 2026 in Heidelberg. Another workshop is planned for February 2026, again in Heidelberg. Stay tuned for announcements about this event! 
+
+We had a great time welcoming participants from bioinformatics and related disciplines, but also beyond! 
+
+ The BioCypher Workshop was a week-long event held in Heidelberg from the 15th to the 19th of June, organized by the Scientific Software Center together with the BioCypher team and supported by the DFG and the International Society for Information Fusion. Its purpose was to teach researchers how to turn messy, heterogeneous biomedical data into semantic knowledge graphs using BioCypher, and to foster a community around reusable, well-documented data adapters, with each day combining a morning of plenary talks with three hands-on afternoon sessions that were frequently split into novice and advanced tracks. Monday laid the foundations by introducing knowledge graphs, nodes, edges and triples, ontologies such as OWL, RDFS and Biolink, project-specific schemas, reasoning, provenance through strict mode, and Neo4j querying with Cypher, while also previewing the three ways of using BioCypher through code, low-code OntoWeaver, and AI assistance. Tuesday moved into building the first working adapter in Python, with a novice track using prepared protein-interaction data and an advanced track using real DrugCentral drug-target data, followed by sessions on the BioCypher MCP and a hands-on OntoWeaver tutorial given by Johann Dreo. Wednesday focused on harmonizing biomedical data through structured MLCroissant metadata to make datasets and adapters discoverable, portable, interoperable and reproducible, and it also covered adapter registries and AI-supported open-source software development, whereas Thursday extended a single adapter into multiple adapters and a heterogeneous knowledge graph, showing where BioCypher hands off to OntoWeaver's fusion module for identifier mapping, duplicate resolution and evidence aggregation, alongside sessions on BioChatter and Biotope, before Friday closed the week with highlights, feedback and guidance on contributing to BioCypher. 
+ 
+ The overarching message of the week was that knowledge graphs become valuable because entities are connected through typed, interpretable relationships that can be queried along biologically meaningful paths, that schemas combined with strict provenance and a shared ontology like Biolink keep projects clean and reusable from the outset, and that BioCypher does not try to build one universal biology graph but instead frames each researcher's own question while preserving provenance and mapping onto standard ontologies, with OntoWeaver and Croissant handling fusion and metadata around it.
+
+
+<div>
+<img src="/assets/img/biocypher-workshop-group-picture.jpg" alt="Group picture of the participants, BioCypher user workshop 2026" width="800">
+</div>
+The group picture of the BioCypher workshop participants, on the rooftop terrace of the Mathematikon.
 
 ## Background
 
@@ -139,7 +149,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>hands-on session: "Agentic API in BioCypher"</td>
+                <td>hands-on session: "AI-supported open-source software development"</td>
             </tr>
             <tr>
                 <td colspan="2">lunch break</td>
@@ -194,7 +204,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>15:15-16:45</td>
-                <td>hands-on session: "AI-supported open-source software development"</td>
+                <td>hands-on session: "BioChatter, Biotope and more (Sebastian Lobentanzer)"</td>
             </tr>
         </tbody>
     </table>
@@ -221,7 +231,7 @@ Learn how to create knowledge graphs from your data and import them into a graph
             </tr>
             <tr style="background-color:var(--md-primary-fg-color); color:var(--md-primary-bg-color);">
                 <td>11:00-12:30</td>
-                <td>Quantify participant achievements, feedback and workshop closing</td>
+                <td>Achievements, feedback and workshop closing</td>
             </tr>
         </tbody>
     </table>
@@ -242,11 +252,6 @@ Learn how to create knowledge graphs from your data and import them into a graph
 
 !!! warning "Requirements"
     Familiarity with ontologies and/or knowledge graphs and/or Python is helpful. You need to bring a laptop with a working Python installation and an IDE such as VSCode.
-
-## Registration
-Registration closes on May 15th, 2026 at 11:59PM CET. Travel awards will be announced by May 22nd, 2026.
-
-[Register for the Workshop :material-arrow-right:](https://limesurvey.urz.uni-heidelberg.de/index.php/452584?lang=en){ .md-button .md-button--primary }
 
 ## Financial support
 
