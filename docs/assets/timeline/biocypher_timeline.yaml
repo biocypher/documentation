@@ -10,13 +10,13 @@
   sub_title: "2026-06-15"
   title: Workshop
 - content: |
-    TomTom (integrated tomato knowledge graph) peer-reviewed in [New Phytologist](TBD).  
+    TomTom (integrated tomato knowledge graph) peer-reviewed in [New Phytologist](https://doi.org/10.1111/nph.71382).  
     [:octicons-arrow-right-24: Preprint here](https://www.biorxiv.org/content/10.1101/2025.04.09.647963v1)
   icon: ":material-file-document-check-outline:"
   sub_title: "2026-06-01"
   title: Journal publication
 - content: |
-    IggyTop release (immune receptor signalling knowledge graph).
+    IggyTop release (immmune receptor signalling knowledge graph).
     [:octicons-arrow-right-24: IggyTop](https://iggytop.readthedocs.io/en/latest/)
   icon: ":material-file-document-plus-outline:"
   sub_title: "2026-05-01"
