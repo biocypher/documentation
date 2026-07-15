@@ -1,0 +1,148 @@
+{#-
+  Custom landing page for the BioCypher Ecosystem docs.
+
+  Activated per-page with front matter `template: home.html` in index.md.
+-#}
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="tx-hero" markdown="0">
+    <div class="md-grid tx-hero__grid">
+      <div class="tx-hero__content">
+        <div class="tx-wordmark" aria-label="BioCypher">
+          <img
+            src="{{ 'assets/img/logo-biocypher.png' | url }}"
+            alt=""
+            class="tx-wordmark__logo"
+            width="48"
+            height="48"
+          />
+          <span>BioCypher</span>
+        </div>
+
+        <h1 class="tx-hero__headline">
+          Open infrastructure for biomedical data management.
+        </h1>
+        <p class="tx-hero__tagline">
+          BioCypher revolutionizes the process of creating and managing knowledge representations while maintaining flexibility and transparency. 
+        </p>
+      </div>
+
+      <aside class="tx-code-card" aria-label="Quickstart examples">
+        <div class="tx-code-card__header">
+          <span>Quickstart</span>
+        </div>
+        <div class="tx-code-tabs">
+          <input type="radio" name="tx-code-tab" id="tx-tab-manual" checked>
+          <input type="radio" name="tx-code-tab" id="tx-tab-agentic">
+          <div class="tx-code-tabs__labels" role="tablist" aria-label="Quickstart tabs">
+            <label for="tx-tab-manual" role="tab">Manual</label>
+            <label for="tx-tab-agentic" role="tab">Agentic</label>
+          </div>
+          <div class="tx-code-panel tx-code-panel--manual">
+<pre><code>pip install biocypher
+
+from biocypher import BioCypher
+
+bc = BioCypher()
+bc.write_nodes(adapter.get_nodes())
+bc.write_edges(adapter.get_edges())
+bc.write_import_call()</code></pre>
+            <a href="{{ 'BioCypher/learn/quickstart/' | url }}">Open full tutorial →</a>
+          </div>
+          <div class="tx-code-panel tx-code-panel--agentic">
+<pre><code>claude
+
+/plugin marketplace add biocypher/biotope
+/plugin install biotope@biotope
+
+> Please analyze my cardiometabolic data and build a knowledge representation to identify molecular links between insulin resistance and cardiovascular disease.</code></pre>
+            <a href="{{ 'Biotope/tutorial/#agent-shortcut' | url }}">Open full agentic tutorial →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="tx-publication-strip">
+      <div class="md-grid tx-publication-strip__grid">
+        <div class="tx-publication-strip__badge" aria-hidden="true">
+          <span>nature</span>
+          <strong>biotech</strong>
+        </div>
+        <p>
+          <strong>BioCypher is published in Nature Biotechnology.</strong>
+          <a href="https://www.nature.com/articles/s41587-023-01848-y" target="_blank" rel="noopener noreferrer">Read the BioCypher paper →</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="tx-trust-strip" aria-labelledby="tx-partners-heading">
+      <div class="md-grid tx-trust-strip__grid">
+        <div class="tx-trust-strip__heading">
+          <p class="tx-trust-strip__eyebrow">Partners</p>
+          <h2 id="tx-partners-heading">Built with a global research community.</h2>
+        </div>
+        <ul class="tx-logo-grid">
+          <li>
+            <a href="{{ 'sponsors/' | url }}" aria-label="Helmholtz Munich — view BioCypher partners">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/helmholtz_munich.png' | url }}" alt="Helmholtz Munich" width="615" height="209" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="EMBL-EBI — view BioCypher use cases">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/EMBL_EBI-logo.png' | url }}" alt="EMBL-EBI" width="582" height="181" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="Heidelberg University — view BioCypher use cases">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/uni_heidelberg.webp' | url }}" alt="Heidelberg University" width="912" height="478" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'sponsors/' | url }}" aria-label="Open Targets — view BioCypher partners">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/opentargets.png' | url }}" alt="Open Targets" width="2000" height="597" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41587-023-01848-y" target="_blank" rel="noopener noreferrer" aria-label="Institut Pasteur — view the BioCypher paper">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/institut_pasteur.png' | url }}" alt="Institut Pasteur" width="512" height="138" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'community/2026-workshop/' | url }}" aria-label="Bayer — view the BioCypher community workshop">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/Bayer_Logo.svg' | url }}" alt="Bayer" width="1000" height="337" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'sponsors/' | url }}" aria-label="ELIXIR — view BioCypher partners">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/elixir.png' | url }}" alt="ELIXIR" width="2305" height="1736" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="Stanford University — view BioCypher use cases">
+              <span class="tx-logo-grid__mark">
+                <img src="{{ 'assets/img/partner_logos/Stanford-uni-logo.png' | url }}" alt="Stanford University" width="3840" height="2160" loading="lazy" decoding="async">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+{% endblock %}

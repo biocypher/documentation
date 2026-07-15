@@ -1,31 +1,26 @@
-site_name: The BioCypher Ecosystem
+site_name: BioCypher
 site_url: https://biocypher.org
+site_description: Open, ontology-grounded biomedical knowledge graph engineering.
+repo_url: https://github.com/biocypher/biocypher
+repo_name: biocypher/biocypher
 
 theme:
   name: material
+  custom_dir: overrides
+  logo: assets/img/logo-biocypher.png
+  favicon: assets/img/favicon-biocypher-32px.png
   features:
-    - navigation.tabs
     - navigation.sections
+    - navigation.tabs
     - search.suggest
     - search.highlight
     - content.code.copy
-    - navigation.footer
     - content.action.edit
-    - toc.integrate
 
   palette:
-    - scheme: default
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: custom
+    accent: custom
 
 nav:
   - About:
@@ -46,6 +41,8 @@ nav:
 
   - Biotope: "!include ./biotope/mkdocs.nav.yml"
 
+  - Community: https://biocypher.zulipchat.com/
+
 plugins:
   - search
   - include-markdown
@@ -56,9 +53,12 @@ plugins:
   - monorepo
   - table-reader
   - mkdocs-jupyter
-  - social
   - redirects:
       redirect_maps: {} # Can be configured as needed
+
+validation:
+  nav:
+    omitted_files: ignore
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -86,6 +86,8 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: simple/github
+      link: https://github.com/biocypher
     - icon: simple/zulip
       link: https://biocypher.zulipchat.com/
     - icon: material/contacts
@@ -97,9 +99,12 @@ extra:
 
 extra_css:
   - assets/css/css-v1.1.0.css
+  - assets/css/home-v1.0.0.css
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - scripts/tablesort.js
+  - scripts/counters.js
+  - scripts/nav-drawer.js
 
 copyright: © Copyright 2021-2025, BioCypher developers.
