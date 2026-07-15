@@ -1,4 +1,0 @@
-interface:
-  display_name: "Humanizer"
-  short_description: "Make AI-sounding writing feel natural"
-  default_prompt: "Use $humanizer to revise this text so it sounds natural and human-written."
