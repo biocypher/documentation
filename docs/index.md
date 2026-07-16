@@ -36,12 +36,9 @@ hide:
 
 <section class="tx-section tx-section--evidence" id="evidence">
   <div class="tx-section__header">
-    <p class="tx-kicker">Papers</p>
-    <h2>Papers and projects using BioCypher.</h2>
-    <p>
-      BioCypher sits behind citable software, deployed research graphs, and
-      AI-facing biomedical data services.
-    </p>
+    <p class="tx-kicker">Ecosystem publications</p>
+    <h2>Core publications from the BioCypher ecosystem.</h2>
+    <p>These papers introduce BioCypher, BioChatter, and BioContext.</p>
   </div>
 
   <ul class="tx-publication-list" aria-label="Academic publications">
@@ -76,7 +73,7 @@ hide:
 
   <div class="tx-section__header tx-section__header--compact">
     <p class="tx-kicker">Deployed use cases</p>
-    <h3>Used in scientific knowledge-graph projects.</h3>
+    <h3>BioCypher in scientific knowledge-graph projects.</h3>
   </div>
 
   <div class="tx-usecase-grid">
@@ -88,13 +85,11 @@ hide:
       <h3>IGVF Catalog / ENCODE</h3>
       <p>BioCypher helps the IGVF team shape genomic variation data into a Biolink-inspired graph with a user-facing API.</p>
     </a>
-    <a href="https://blog.opentargets.org/official-open-targets-mcp/" target="_blank" rel="noopener noreferrer">
-      <div class="tx-usecase-grid__logo" aria-hidden="true">
-        <img src="assets/img/projects_logos/opentargets_mcp.png" alt="" width="1300" height="418" loading="lazy" decoding="async">
-      </div>
-      <span>Target discovery · Open Targets</span>
-      <h3>Open Targets MCP</h3>
-      <p>The official Open Targets MCP makes Platform data available to AI tools for target identification and prioritisation.</p>
+    <a href="https://doi.org/10.1111/nph.71382" target="_blank" rel="noopener noreferrer">
+      <div class="tx-usecase-grid__logo tx-usecase-grid__logo--wordmark" aria-hidden="true">TomTom</div>
+      <span>Plant biology · RWTH Aachen</span>
+      <h3>TomTom knowledge graph</h3>
+      <p>TomTom uses BioCypher to integrate tomato multi-omics data for gene and protein function discovery.</p>
     </a>
     <a href="https://github.com/biocypher/metalinks" target="_blank" rel="noopener noreferrer">
       <div class="tx-usecase-grid__logo" aria-hidden="true">
@@ -124,7 +119,7 @@ hide:
       <h3>Discuss on Zulip</h3>
       <p>Ask questions, coordinate ideas, and meet the people building BioCypher.</p>
       <a href="https://biocypher.zulipchat.com/#narrow/channel/371279-announcements/topic/Releases/with/598596369" target="_blank" rel="noopener noreferrer">Announcements →</a>
-      <a href="https://biocypher.zulipchat.com/#narrow/channel/371264-general/topic/General.20Questions/with/396284706" target="_blank" rel="noopener noreferrer">Ask a question →</a>
+      <a href="https://biocypher.zulipchat.com/#narrow/channel/371278-help" target="_blank" rel="noopener noreferrer">Ask a question →</a>
     </article>
     <article class="tx-involved-card">
       <h3>Start from tutorials</h3>

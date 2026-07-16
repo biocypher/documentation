@@ -891,6 +891,13 @@ body {
   object-fit: contain;
 }
 
+.tx-usecase-grid__logo--wordmark {
+  color: #206d3b;
+  font-size: 1.65rem;
+  font-weight: 950;
+  letter-spacing: -0.06em;
+}
+
 .tx-usecase-grid a:hover,
 .tx-start-card:hover {
   transform: translateY(-2px);
@@ -938,9 +945,19 @@ body {
 }
 
 .tx-activity-feature:hover,
-.tx-activity-row:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--bc-shadow);
+.tx-activity-feature:focus-visible {
+  border-color: rgba(16, 119, 85, 0.42);
+}
+
+.tx-activity-row:hover strong,
+.tx-activity-row:focus-visible strong {
+  color: var(--bc-green-dark);
+}
+
+.tx-activity-feature:focus-visible,
+.tx-activity-row:focus-visible {
+  outline: 0.12rem solid var(--bc-green);
+  outline-offset: 0.2rem;
 }
 
 .tx-activity-feature img {
