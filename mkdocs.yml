@@ -22,6 +22,14 @@ theme:
     primary: custom
     accent: custom
 
+# Watch the real source dirs during `mkdocs serve`. The monorepo plugin
+# swaps docs_dir for a temp aggregate, so the default watcher would only see
+# that throwaway copy; list docs/ and overrides/ explicitly so edits to the
+# landing page, partials, CSS, and content trigger a rebuild + livereload.
+watch:
+  - docs
+  - overrides
+
 nav:
   - About:
       - "": index.md

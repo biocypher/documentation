@@ -1,0 +1,21 @@
+# Lightweight config for iterating on the landing page and theme.
+#
+# It inherits the full mkdocs.yml but drops the monorepo sub-repo includes and
+# the heavy plugins (notebook conversion, etc.). That avoids the temp-docs_dir
+# swap that breaks live-reload in the full build, so edits to the landing page,
+# partials, and CSS rebuild in ~1s and refresh the browser automatically.
+#
+#   uv run mkdocs serve -f mkdocs.dev.yml     # fast landing-page iteration
+#   uv run mkdocs serve                        # full site (slow, no live-reload)
+INHERIT: mkdocs.yml
+
+# Only the pages needed to work on the landing page. No "!include" sub-navs,
+# so the monorepo plugin's docs_dir swap never happens.
+nav:
+  - Home: index.md
+  - Philosophy: philosophy.md
+
+# Minimal plugin set: search only. Drops monorepo, mkdocs-jupyter, table-reader,
+# redirects, include-markdown, etc.
+plugins:
+  - search
