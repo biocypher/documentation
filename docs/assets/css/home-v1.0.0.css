@@ -256,6 +256,12 @@ body {
   }
 }
 
+.tx-hero__content {
+  /* Establish a container so the headline can size itself from this
+     column's width (cqi units) rather than the viewport. */
+  container-type: inline-size;
+}
+
 .tx-wordmark {
   display: flex;
   align-items: center;
@@ -275,13 +281,18 @@ body {
 }
 
 .tx-hero__headline {
-  max-width: 17ch;
+  max-width: 100%;
   margin: 0;
   color: #ffffff;
-  font-size: clamp(2.3rem, 5.1vw, 4rem);
+  /* Sized from the column width (cqi), not the viewport, so the shape is
+     stable across window size and zoom. `nowrap` keeps each line intact,
+     so "Open infrastructure" and "data management" never break mid-line.
+     8cqi is the single knob: raise for larger type, lower if a line wraps. */
+  font-size: clamp(1.9rem, 8cqi, 3.2rem);
   font-weight: 950;
   letter-spacing: 0;
   line-height: 1.04;
+  white-space: nowrap;
 }
 
 .tx-hero__tagline {
@@ -1169,7 +1180,9 @@ body {
 
   .tx-hero__headline {
     max-width: 100%;
-    font-size: clamp(2rem, 11vw, 2.7rem);
+    /* Let a line wrap rather than clip if the narrow single column can't
+       fit it; the cqi sizing above still governs the base size. */
+    white-space: normal;
   }
 
   .tx-wordmark {
