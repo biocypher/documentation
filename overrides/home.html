@@ -83,67 +83,44 @@ bc.write_import_call()</code></pre>
     <div class="tx-trust-strip" aria-labelledby="tx-partners-heading">
       <div class="md-grid tx-trust-strip__grid">
         <div class="tx-trust-strip__heading">
-          <p class="tx-trust-strip__eyebrow">Partners</p>
-          <h2 id="tx-partners-heading">Built with a global research community.</h2>
+          <h2 id="tx-partners-heading">A community of partners and users.</h2>
         </div>
-        <ul class="tx-logo-grid">
-          <li>
-            <a href="{{ 'sponsors/' | url }}" aria-label="Helmholtz Munich — view BioCypher partners">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/helmholtz_munich.png' | url }}" alt="Helmholtz Munich" width="615" height="209" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="EMBL-EBI — view BioCypher use cases">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/EMBL_EBI-logo.png' | url }}" alt="EMBL-EBI" width="582" height="181" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="Heidelberg University — view BioCypher use cases">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/uni_heidelberg.webp' | url }}" alt="Heidelberg University" width="912" height="478" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'sponsors/' | url }}" aria-label="Open Targets — view BioCypher partners">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/opentargets.png' | url }}" alt="Open Targets" width="2000" height="597" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41587-023-01848-y" target="_blank" rel="noopener noreferrer" aria-label="Institut Pasteur — view the BioCypher paper">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/institut_pasteur.png' | url }}" alt="Institut Pasteur" width="512" height="138" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'community/2026-workshop/' | url }}" aria-label="DFG: view the BioCypher community workshop">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/dfg_logo_schriftzug_blau_foerderung_de.png' | url }}" alt="DFG" width="850" height="220" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'sponsors/' | url }}" aria-label="ELIXIR — view BioCypher partners">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/elixir.png' | url }}" alt="ELIXIR" width="2305" height="1736" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ 'BioCypher/biocypher-project/use-cases/' | url }}" aria-label="Stanford University — view BioCypher use cases">
-              <span class="tx-logo-grid__mark">
-                <img src="{{ 'assets/img/partner_logos/Stanford-uni-logo.png' | url }}" alt="Stanford University" width="3840" height="2160" loading="lazy" decoding="async">
-              </span>
-            </a>
-          </li>
-        </ul>
+      </div>
+
+      {% set tx_partners = [
+        {'src': 'assets/img/partner_logos/helmholtz_munich.png', 'alt': 'Helmholtz Munich', 'w': 615, 'h': 209, 'sm': True},
+        {'src': 'assets/img/partner_logos/EMBL_EBI-logo.png', 'alt': 'EMBL-EBI', 'w': 582, 'h': 181},
+        {'src': 'assets/img/partner_logos/uni_heidelberg.webp', 'alt': 'Heidelberg University', 'w': 912, 'h': 478},
+        {'text': 'TomTom'},
+        {'src': 'assets/img/partner_logos/opentargets.png', 'alt': 'Open Targets', 'w': 2000, 'h': 597},
+        {'src': 'assets/img/partner_logos/institut_pasteur.png', 'alt': 'Institut Pasteur', 'w': 512, 'h': 138, 'sm': True},
+        {'src': 'assets/img/partner_logos/framed_hms_logo.png', 'alt': 'Harvard Medical School', 'w': 1024, 'h': 289},
+        {'text': 'IggyTop'},
+        {'src': 'assets/img/partner_logos/elixir.png', 'alt': 'ELIXIR', 'w': 2305, 'h': 1736},
+        {'src': 'assets/img/dfg_logo_schriftzug_blau_foerderung_de.png', 'alt': 'DFG', 'w': 850, 'h': 220},
+        {'src': 'assets/img/projects_logos/igvf.webp', 'alt': 'IGVF', 'w': 602, 'h': 206, 'sm': True},
+        {'text': 'OptimusKG'},
+        {'src': 'assets/img/partner_logos/Stanford-uni-logo.png', 'alt': 'Stanford University', 'w': 3840, 'h': 2160},
+        {'src': 'assets/img/projects_logos/metalinks_db_logo_3x4.png', 'alt': 'Metalinks', 'w': 1460, 'h': 1022},
+        {'src': 'assets/img/projects_logos/opentargets_mcp.png', 'alt': 'Open Targets MCP', 'w': 1300, 'h': 418},
+      ] %}
+      <div class="tx-marquee" aria-label="Partner, user, and project organisations">
+        <div class="tx-marquee__track">
+          {% for _rep in [1, 2, 3, 4] %}
+          {% set dup = not loop.first %}
+          <ul class="tx-marquee__group"{% if dup %} aria-hidden="true"{% endif %}>
+            {% for item in tx_partners %}
+            <li>
+              {% if item.src %}
+              <img src="{{ item.src | url }}" alt="{{ '' if dup else item.alt }}" width="{{ item.w }}" height="{{ item.h }}"{% if item.sm %} class="tx-marquee__img--sm"{% endif %} decoding="async">
+              {% else %}
+              <span class="tx-marquee__wordmark">{{ item.text }}</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </section>
