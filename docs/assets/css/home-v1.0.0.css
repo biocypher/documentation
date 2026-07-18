@@ -523,11 +523,11 @@ body {
 .tx-trust-strip__heading h2 {
   max-width: 32rem;
   margin: 0 auto;
-  color: var(--bc-ink);
+  color: #8b948e;
   /* Match the "BioCypher is published" line in .tx-publication-strip p. */
   font-size: clamp(0.95rem, 1.55vw, 1.18rem);
-  font-weight: 900;
-  letter-spacing: -0.025em;
+  font-weight: 300;
+  letter-spacing: 0;
   line-height: 1.18;
 }
 
