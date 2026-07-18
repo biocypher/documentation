@@ -16,6 +16,10 @@
   --bc-green-dark: #107755;
   --bc-dark: #071b16;
   --bc-dark-2: #112a24;
+  /* Dark-green gradient reused across all dark sections. Horizontal (90deg) so
+     colour depends only on x — a divider at any height stays aligned with the
+     section body beneath it. */
+  --bc-dark-gradient: linear-gradient(90deg, #071a16, #0d2a22 62%, #133d30);
   --bc-card: #ffffff;
   --bc-shadow: 0 1rem 2.4rem rgba(16, 32, 29, 0.10);
   --md-primary-fg-color: #ffffff;
@@ -497,7 +501,7 @@ body {
 
 .tx-trust-strip::after {
   bottom: 0;
-  background: #123d30;
+  background: var(--bc-dark-gradient);
   transform: translate(-50%, 50%);
 }
 
@@ -801,10 +805,17 @@ body {
 /* Scoped under .tx-home-body so this padding-top beats the base
    `.tx-home-body .tx-section` padding shorthand (equal specificity, later). */
 .tx-home-body .tx-section--intro {
+  position: relative;
   padding-top: clamp(1.1rem, 2.3vw, 1.8rem);
-  background: #123d30;
-  box-shadow: 0 0 0 100vmax #123d30;
-  clip-path: inset(0 -100vmax);
+}
+
+/* Full-bleed dark gradient behind the constrained (61rem) content. */
+.tx-home-body .tx-section--intro::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 calc(50% - 50vw);
+  background: var(--bc-dark-gradient);
 }
 
 .tx-section--intro .tx-section__header h2 {
@@ -920,9 +931,15 @@ body {
 }
 
 .tx-section--involved {
-  background: var(--bc-dark-2);
-  box-shadow: 0 0 0 100vmax var(--bc-dark-2);
-  clip-path: inset(0 -100vmax);
+  position: relative;
+}
+
+.tx-section--involved::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 calc(50% - 50vw);
+  background: var(--bc-dark-gradient);
 }
 
 .tx-section--involved .tx-section__header h2,
@@ -1179,7 +1196,7 @@ body {
  * ------------------------------------------------------------------ */
 
 .tx-footer {
-  background: #071b16;
+  background: var(--bc-dark-gradient);
   color: #dbeee6;
 }
 
