@@ -430,7 +430,7 @@ body {
   justify-content: center;
   gap: 1rem;
   min-height: clamp(5.1rem, 8vw, 6.7rem);
-  padding: 0.9rem 0.8rem 1.25rem;
+  padding: 1.85rem 0.8rem 1.25rem;
   text-align: left;
 }
 
@@ -506,7 +506,7 @@ body {
 }
 
 .tx-trust-strip__grid {
-  padding: clamp(1.2rem, 2.2vw, 1.7rem) 0.8rem clamp(1.8rem, 3.6vw, 2.6rem);
+  padding: clamp(1.9rem, 3.3vw, 2.6rem) 0.8rem clamp(1.8rem, 3.6vw, 2.6rem);
   text-align: center;
 }
 
