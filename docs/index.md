@@ -11,25 +11,65 @@ hide:
 
 <section class="tx-section tx-section--intro" id="why">
   <div class="tx-section__header">
-    <p class="tx-kicker">Why BioCypher</p>
-    <h2>Practical knowledge graphs for an open ecosystem</h2>
+    <p class="tx-kicker">Why the BioCypher ecosystem</p>
+    <h2>One workflow, from raw data to grounded answers</h2>
+    <p>Each step uses your project's context to stay focused and semantically grounded.</p>
   </div>
 
   <div class="tx-feature-grid">
     <article class="tx-feature-card">
-      <span class="tx-feature-card__icon" aria-hidden="true">⌬</span>
-      <h3>Ontology-aligned</h3>
-      <p>Map incoming data to biomedical ontologies so graph labels and relationships stay understandable.</p>
+      <div class="tx-feature-card__head">
+        <span class="tx-feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v11"/>
+            <path d="M7.5 10 12 14.5 16.5 10"/>
+            <path d="M5 19h14"/>
+          </svg>
+        </span>
+        <h3>Gather</h3>
+      </div>
+      <p>Pull in data from any source. Extract structured entities from text and messy files, annotated with portable metadata.</p>
+      <div class="tx-feature-card__tools" role="list" aria-label="Components">
+        <a role="listitem" href="Biotope/">Biotope</a>
+        <a role="listitem" href="https://github.com/mlcommons/BioCroissant/" target="_blank" rel="noopener noreferrer">BioCroissant</a>
+      </div>
     </article>
     <article class="tx-feature-card">
-      <span class="tx-feature-card__icon" aria-hidden="true">⇄</span>
-      <h3>Adapter-based</h3>
-      <p>Reuse community data adapters where they exist, and write small project adapters where they do not.</p>
+      <div class="tx-feature-card__head">
+        <span class="tx-feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="7" r="2.2"/>
+            <circle cx="18" cy="7" r="2.2"/>
+            <circle cx="12" cy="17" r="2.2"/>
+            <path d="M8.2 7h7.6"/>
+            <path d="M7.1 8.9 10.9 15.1"/>
+            <path d="M16.9 8.9 13.1 15.1"/>
+          </svg>
+        </span>
+        <h3>Build</h3>
+      </div>
+      <p>Construct ontology-aligned knowledge graphs with reusable adapters, and export the same build to different formats and environments.</p>
+      <div class="tx-feature-card__tools" role="list" aria-label="Components">
+        <a role="listitem" href="BioCypher/">BioCypher</a>
+      </div>
     </article>
     <article class="tx-feature-card">
-      <span class="tx-feature-card__icon" aria-hidden="true">↗</span>
-      <h3>Flexible output</h3>
-      <p>Write the same graph build to Neo4j, RDF/OWL, SQL, NetworkX, ArangoDB, or tables.</p>
+      <div class="tx-feature-card__head">
+        <span class="tx-feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 14a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/>
+            <circle cx="8.5" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
+            <circle cx="12.5" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
+            <circle cx="16.5" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <h3>Reason</h3>
+      </div>
+      <p>Query and chat with your graph. Connect it to LLMs and shared context resources for grounded, agentic analysis.</p>
+      <div class="tx-feature-card__tools" role="list" aria-label="Components">
+        <a role="listitem" href="BioChatter/">BioChatter</a>
+        <a role="listitem" href="https://biocontext.ai" target="_blank" rel="noopener noreferrer">BioContext</a>
+      </div>
     </article>
   </div>
 </section>
