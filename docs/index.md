@@ -72,6 +72,10 @@ hide:
       </div>
     </article>
   </div>
+
+  <div class="tx-about-links">
+    <a href="about/">Read more about the ecosystem.</a>
+  </div>
 </section>
 
 <section class="tx-section tx-section--evidence" id="evidence">
