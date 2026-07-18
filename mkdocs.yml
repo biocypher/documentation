@@ -34,8 +34,9 @@ hooks:
   - biocypher_docs/activity_stream.py
 
 nav:
+  - Home: index.md
   - About:
-      - "": index.md
+      - Overview: about.md
       - Philosophy: philosophy.md
       - Timeline and Publications: project.md
       - Sponsors: sponsors.md
