@@ -200,6 +200,13 @@ body {
   color: var(--bc-ink);
 }
 
+/* Material assumes the mobile drawer header uses the primary colour and makes
+   its source card white. This site has a white drawer, so keep the repository
+   name and facts readable there. */
+.md-nav--primary .md-source {
+  color: var(--bc-ink);
+}
+
 @media screen and (max-width: 59.984em) {
   .md-header__button.md-logo {
     display: none;
@@ -1215,6 +1222,12 @@ body {
 .tx-footer {
   background: var(--bc-dark-gradient);
   color: #dbeee6;
+}
+
+/* Keep long sticky documentation sidebars visually separate from the
+   full-bleed footer. The landing page is intentionally flush. */
+.md-main:not(:has(.tx-home-body)) + .tx-footer {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .tx-footer__grid {

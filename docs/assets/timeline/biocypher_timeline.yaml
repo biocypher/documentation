@@ -3,24 +3,39 @@
   icon: ":material-code-tags:"
   sub_title: "2026-11-19"
   title: Hackathon
+  landing:
+    title: ELIXIR BioHackathon Europe 2026
+    summary: Biotope-driven construction of an ELIXIR knowledge graph.
 - content: |
     User workshop on establishing a knowledge graph community in biomedical science.  
     [:octicons-arrow-right-24: Workshop information](https://biocypher.org/community/2026-workshop/)
   icon: ":material-calendar-range:"
   sub_title: "2026-06-15"
   title: Workshop
+  landing:
+    title: Biomedical KG community workshop
+    summary: User workshop focused on shared practices.
+    url: community/2026-workshop/
 - content: |
     TomTom (integrated tomato knowledge graph) peer-reviewed in [New Phytologist](https://doi.org/10.1111/nph.71382).  
     [:octicons-arrow-right-24: Preprint here](https://www.biorxiv.org/content/10.1101/2025.04.09.647963v1)
   icon: ":material-file-document-check-outline:"
   sub_title: "2026-06-01"
   title: Journal publication
+  landing:
+    title: TomTom knowledge graph
+    summary: Integrated tomato knowledge graph published in New Phytologist.
+    url: https://doi.org/10.1111/nph.71382
 - content: |
     IggyTop release (immune receptor signalling knowledge graph).
     [:octicons-arrow-right-24: IggyTop](https://iggytop.readthedocs.io/en/latest/)
   icon: ":material-file-document-plus-outline:"
   sub_title: "2026-05-01"
   title: Release
+  landing:
+    title: IggyTop release
+    summary: Immune receptor signalling knowledge graph released.
+    url: https://iggytop.readthedocs.io/en/latest/
 - content: |
     [Agentic Automation Canvas (AAC)](https://aac.slolab.ai) double feature preprint.  
     [:octicons-arrow-right-24: AAC Manuscript](https://arxiv.org/abs/2602.15090)  
@@ -28,26 +43,46 @@
   icon: ":material-file-document-plus-outline:"
   sub_title: "2026-02-26"
   title: Preprint publication
+  landing:
+    title: Agentic Automation Canvas
+    summary: Double-feature preprint on agentic automation and expectation gaps.
+    url: https://aac.slolab.ai
 - content: |
     ELIXIR BioHackathon Germany 2025; contributions to BioCypher / BioChatter to [load systems biology models](https://github.com/BioCypher/sys-bio-kgs).
   icon: ":material-code-tags:"
   sub_title: "2025-12-01"
   title: Hackathon
+  landing:
+    title: Systems biology model loading
+    summary: ELIXIR BioHackathon Germany contributions to BioCypher and BioChatter.
+    url: https://github.com/BioCypher/sys-bio-kgs
 - content: |
     BioContext published in [Nature Biotechnology](https://www.nature.com/articles/s41587-025-02900-9). Website launched at [biocontext.ai](https://biocontext.ai).
   icon: ":material-file-document-plus-outline:"
   sub_title: "2025-11-06"
   title: Journal publication
+  landing:
+    title: BioContext in Nature Biotechnology
+    summary: BioContext paper published and the registry launched at biocontext.ai.
+    url: https://www.nature.com/articles/s41587-025-02900-9
 - content: |
     ELIXIR BioHackathon Europe 2025; contributions to [EDAM Ontology MCP server](https://github.com/edamontology/edammcp).
   icon: ":material-code-tags:"
   sub_title: "2025-11-03"
   title: Hackathon
+  landing:
+    title: EDAM Ontology MCP server
+    summary: ELIXIR BioHackathon Europe contributions to biomedical MCP infrastructure.
+    url: https://github.com/edamontology/edammcp
 - content: |
     Medical benchmarking study publised in [npj Digital Medicine](https://www.nature.com/articles/s41746-025-01996-2).
   icon: ":material-file-document-check-outline:"
   sub_title: "2025-10-27"
   title: Journal publication
+  landing:
+    title: Medical benchmarking study
+    summary: Published in npj Digital Medicine.
+    url: https://www.nature.com/articles/s41746-025-01996-2
 - content: |
     BioContext preprint published.  
     [:octicons-arrow-right-24: Preprint](https://www.biorxiv.org/content/10.1101/2025.07.21.665729v1)

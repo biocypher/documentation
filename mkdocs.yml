@@ -30,6 +30,9 @@ watch:
   - docs
   - overrides
 
+hooks:
+  - biocypher_docs/activity_stream.py
+
 nav:
   - About:
       - "": index.md
@@ -112,7 +115,7 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - scripts/tablesort.js
-  - scripts/counters.js
   - scripts/nav-drawer.js
+  - scripts/source-metrics.js
 
 copyright: © Copyright 2021-2025, BioCypher developers.
