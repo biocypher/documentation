@@ -12,7 +12,7 @@ hide:
 <section class="tx-section tx-section--intro" id="why">
   <div class="tx-section__header">
     <p class="tx-kicker">Why BioCypher</p>
-    <h2>A practical way to build biomedical knowledge graphs.</h2>
+    <h2>A practical way to build knowledge graphs</h2>
   </div>
 
   <div class="tx-feature-grid">
@@ -37,7 +37,7 @@ hide:
 <section class="tx-section tx-section--evidence" id="evidence">
   <div class="tx-section__header">
     <p class="tx-kicker">Ecosystem publications</p>
-    <h2>Core publications from the BioCypher ecosystem.</h2>
+    <h2>Core publications from the BioCypher ecosystem</h2>
   </div>
 
   <ul class="tx-publication-list" aria-label="Academic publications">
@@ -104,7 +104,7 @@ hide:
 <section class="tx-section tx-section--involved" id="ecosystem">
   <div class="tx-section__header">
     <p class="tx-kicker">Community</p>
-    <h2>Ways to join.</h2>
+    <h2>Ways to join</h2>
     <p>Use the tools, cite the papers, ask questions, or contribute code and docs.</p>
   </div>
 
@@ -132,7 +132,7 @@ hide:
 <section class="tx-section tx-section--activity" id="activity">
   <div class="tx-section__header">
     <p class="tx-kicker">Activity</p>
-    <h2>Recent work.</h2>
+    <h2>Recent work</h2>
     <p>Workshops, BioHackathons, releases, papers, and related tools from the BioCypher community.</p>
   </div>
 

@@ -710,7 +710,7 @@ body {
   color: var(--bc-green-dark);
   font-size: 0.66rem;
   font-weight: 950;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -723,10 +723,10 @@ body {
 .tx-home-body h2 {
   margin-bottom: 0.65rem;
   color: var(--bc-ink);
-  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
-  font-weight: 950;
-  letter-spacing: -0.055em;
-  line-height: 1.04;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
 }
 
 .tx-home-body h3 {
