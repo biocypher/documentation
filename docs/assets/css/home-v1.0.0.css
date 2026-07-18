@@ -827,9 +827,26 @@ body {
 }
 
 .tx-section--evidence {
+  position: relative;
   background: var(--bc-soft);
   box-shadow: 0 0 0 100vmax var(--bc-soft);
   clip-path: inset(0 -100vmax);
+}
+
+/* Convex divider at the bottom of the WHY BIOCYPHER band, mirroring the one at
+   its top (.tx-trust-strip::after): the intro's dark green bumps down into the
+   evidence section. Lives on the evidence pseudo so it paints above the evidence
+   background; the evidence clip-path trims the half that sits in the intro. */
+.tx-section--evidence::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 130%;
+  height: clamp(0.85rem, 2.1vw, 1.45rem);
+  border-radius: 50%;
+  background: var(--bc-dark-gradient);
+  transform: translate(-50%, -50%);
 }
 
 .tx-publication-list {
