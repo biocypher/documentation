@@ -38,7 +38,6 @@ hide:
   <div class="tx-section__header">
     <p class="tx-kicker">Ecosystem publications</p>
     <h2>Core publications from the BioCypher ecosystem.</h2>
-    <p>These papers introduce BioCypher, BioChatter, and BioContext.</p>
   </div>
 
   <ul class="tx-publication-list" aria-label="Academic publications">
