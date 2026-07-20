@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven TDD"
+  short_description: "Align intent, specify outcomes, verify visually"
+  default_prompt: "Use $tdd to align on the requested outcome, write a minimal acceptance spec with tests, and verify it after implementation."

@@ -1,0 +1,126 @@
+{#-
+  Custom landing page for the BioCypher Ecosystem docs.
+
+  Activated per-page with front matter `template: home.html` in index.md.
+-#}
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="tx-hero" markdown="0">
+    <div class="md-grid tx-hero__grid">
+      <div class="tx-hero__content">
+        <div class="tx-wordmark" aria-label="BioCypher">
+          <img
+            src="{{ 'assets/img/logo-biocypher.png' | url }}"
+            alt=""
+            class="tx-wordmark__logo"
+            width="48"
+            height="48"
+          />
+          <span>BioCypher</span>
+        </div>
+
+        <h1 class="tx-hero__headline">
+          Open infrastructure<br>
+          for biomedical<br>
+          data management.
+        </h1>
+        <p class="tx-hero__tagline">
+          The BioCypher ecosystem brings together open, community-driven tools for dependable biomedical knowledge management.
+        </p>
+      </div>
+
+      <aside class="tx-code-card" aria-label="Quickstart examples">
+        <div class="tx-code-card__header">
+          <span>Quickstart</span>
+        </div>
+        <div class="tx-code-tabs">
+          <input type="radio" name="tx-code-tab" id="tx-tab-manual" checked>
+          <input type="radio" name="tx-code-tab" id="tx-tab-agentic">
+          <div class="tx-code-tabs__labels" role="tablist" aria-label="Quickstart tabs">
+            <label for="tx-tab-manual" role="tab">Manual</label>
+            <label for="tx-tab-agentic" role="tab">Agentic</label>
+          </div>
+          <div class="tx-code-panel tx-code-panel--manual">
+<pre><code>pip install biocypher
+
+from biocypher import BioCypher
+
+bc = BioCypher()
+bc.write_nodes(adapter.get_nodes())
+bc.write_edges(adapter.get_edges())
+bc.write_import_call()</code></pre>
+            <a href="{{ 'BioCypher/learn/quickstart/' | url }}">Open full tutorial →</a>
+          </div>
+          <div class="tx-code-panel tx-code-panel--agentic">
+<pre><code>claude
+
+/plugin marketplace add biocypher/biotope
+/plugin install biotope@biotope
+
+> Please analyze my cardiometabolic data and build a knowledge representation to identify molecular links between insulin resistance and cardiovascular disease.</code></pre>
+            <a href="{{ 'Biotope/tutorial/#agent-shortcut' | url }}">Open full agentic tutorial →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="tx-publication-strip">
+      <div class="md-grid tx-publication-strip__grid">
+        <div class="tx-publication-strip__badge" aria-hidden="true">
+          <span>nature</span>
+          <strong>biotech</strong>
+        </div>
+        <p>
+          <strong>BioCypher is published in Nature Biotechnology.</strong>
+          <a href="https://www.nature.com/articles/s41587-023-01848-y" target="_blank" rel="noopener noreferrer">Read the BioCypher paper →</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="tx-trust-strip" aria-labelledby="tx-partners-heading">
+      <div class="md-grid tx-trust-strip__grid">
+        <div class="tx-trust-strip__heading">
+          <h2 id="tx-partners-heading">A community of partners and users.</h2>
+        </div>
+      </div>
+
+      {% set tx_partners = [
+        {'src': 'assets/img/partner_logos/helmholtz_munich.png', 'alt': 'Helmholtz Munich', 'w': 615, 'h': 209, 'sm': True},
+        {'src': 'assets/img/partner_logos/EMBL_EBI-logo.png', 'alt': 'EMBL-EBI', 'w': 582, 'h': 181},
+        {'src': 'assets/img/partner_logos/uni_heidelberg.webp', 'alt': 'Heidelberg University', 'w': 912, 'h': 478},
+        {'text': 'TomTom'},
+        {'src': 'assets/img/partner_logos/opentargets.png', 'alt': 'Open Targets', 'w': 2000, 'h': 597},
+        {'src': 'assets/img/partner_logos/institut_pasteur.png', 'alt': 'Institut Pasteur', 'w': 512, 'h': 138, 'sm': True},
+        {'src': 'assets/img/partner_logos/framed_hms_logo.png', 'alt': 'Harvard Medical School', 'w': 1024, 'h': 289},
+        {'text': 'IggyTop'},
+        {'src': 'assets/img/partner_logos/elixir.png', 'alt': 'ELIXIR', 'w': 2305, 'h': 1736},
+        {'src': 'assets/img/dfg_logo_schriftzug_blau_foerderung_de.png', 'alt': 'DFG', 'w': 850, 'h': 220},
+        {'src': 'assets/img/projects_logos/igvf.webp', 'alt': 'IGVF', 'w': 602, 'h': 206, 'sm': True},
+        {'text': 'OptimusKG'},
+        {'src': 'assets/img/partner_logos/Stanford-uni-logo.png', 'alt': 'Stanford University', 'w': 3840, 'h': 2160},
+        {'src': 'assets/img/projects_logos/metalinks_db_logo_3x4.png', 'alt': 'Metalinks', 'w': 1460, 'h': 1022},
+      ] %}
+      <div class="tx-marquee" aria-label="Partner, user, and project organisations">
+        <div class="tx-marquee__track">
+          {% for _rep in [1, 2, 3, 4] %}
+          {% set dup = not loop.first %}
+          <ul class="tx-marquee__group"{% if dup %} aria-hidden="true"{% endif %}>
+            {% for item in tx_partners %}
+            <li>
+              {% if item.src %}
+              <img src="{{ item.src | url }}" alt="{{ '' if dup else item.alt }}" width="{{ item.w }}" height="{{ item.h }}"{% if item.sm %} class="tx-marquee__img--sm"{% endif %} decoding="async">
+              {% else %}
+              <span class="tx-marquee__wordmark">{{ item.text }}</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

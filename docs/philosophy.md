@@ -1,6 +1,6 @@
 # The Philosophy of Context-Aware Knowledge Management
 
-The BioCypher ecosystem is built on a fundamental principle: **using project context to improve workflows and performance**. This philosophy manifests across all ecosystem components—from BioCypher's schema configuration to BioChatter's retrieval processes, Biotope's project management, and future tools like BioGather.
+The BioCypher ecosystem is built on a fundamental principle: **using project context to improve workflows and performance**. This philosophy appears across the ecosystem, from BioCypher's schema configuration to BioChatter's retrieval processes, Biotope's project management, and BioGather.
 
 ## The Core Principle: Context as a Bridge
 
@@ -107,20 +107,17 @@ By using enriched schema context (preferably `schema_info.yaml`), BioChatter ach
 
 ### 4. Biotope: Project Context Management
 
-!!! info "Biotope Status"
-    Biotope is currently a **prototype** with limited functionality, designed for developer use and prototyping. The API is subject to change as we refine the tool based on user feedback and requirements.
-
 Biotope acts as a **project context manager** for the BioCypher ecosystem. It maintains and leverages project context across different tools, providing a unified CLI interface for accessing BioCypher ecosystem resources.
 
 #### Current Functionality
 
-Currently, Biotope provides prototype implementations for:
+Biotope provides:
 
 - **Project initialization**: `biotope init` creates project structure and captures metadata
 - **Metadata annotation**: `biotope annotate` helps annotate data with consistent metadata using Croissant ML
 - **File management**: `biotope get` downloads files and automatically starts annotation
-- **Basic integration**: Initial integration points for BioCypher and BioChatter workflows
-- **Context-aware tool discovery**: A search prototype that leverages project context to help users find the right tools by querying the BioContext registry (for biomedical MCP servers and agent tools) as well as public APIs like bio.tools
+- **Workflow integration**: Integration points for BioCypher and BioChatter workflows
+- **Context-aware tool discovery**: Search that uses project context to help users find tools through the BioContext registry and public APIs such as bio.tools
 
 #### Context Preservation
 
@@ -131,9 +128,9 @@ When you initialize a Biotope project with `biotope init`, it:
 - **Tracks data lineage**: Records where data comes from and how it's processed
 - **Preserves schema context**: Links to schema configurations used in the project
 
-#### Future Plans
+#### Development Direction
 
-Biotope is designed to evolve into a comprehensive project management tool with:
+Biotope is being developed as a project management layer with:
 
 - **Complete workflow integration**: Full `biotope build` integration with BioCypher
 - **Intelligent chat interface**: `biotope chat` automatically using the correct schema for BioChatter
@@ -146,13 +143,13 @@ Biotope is designed to evolve into a comprehensive project management tool with:
 ```mermaid
 graph LR
     A[biotope init<br/>Available] -->|Creates| B[Project Context]
-    B -->|Used by| C[biotope build<br/>Planned]
-    B -->|Used by| D[biotope chat<br/>Planned]
-    B -->|Used by| E[biotope annotate<br/>Prototype]
-    B -->|Used by| F[biotope read<br/>Planned]
+    B -->|Used by| C[biotope build]
+    B -->|Used by| D[biotope chat]
+    B -->|Used by| E[biotope annotate]
+    B -->|Used by| F[biotope read]
     
-    C -.->|Future| G[BioCypher Schema]
-    D -.->|Future| H[BioChatter Schema]
+    C -.->|Uses| G[BioCypher Schema]
+    D -.->|Uses| H[BioChatter Schema]
     E -->|Current| I[Metadata Schema]
     
     style B fill:#e8f5e9
@@ -162,9 +159,9 @@ graph LR
     style F fill:#f3e5f5
 ```
 
-### 5. BioGather: Context-Informed Extraction (Future)
+### 5. BioGather: Context-Informed Extraction
 
-BioGather, an upcoming extraction tool, will leverage project context to:
+BioGather extends the same project-context pattern to extraction:
 
 - **Focus extraction**: Only extract entities and relationships defined in your schema
 - **Use schema labels**: Map extracted concepts to your project's `input_label` conventions

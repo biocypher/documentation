@@ -6,3 +6,5 @@ __pycache__/
 .venv 
 .cache
 .vscode
+.mcp.json
+.playwright-mcp/

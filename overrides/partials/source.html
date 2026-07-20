@@ -1,0 +1,18 @@
+{% set tx_repo_url = "https://github.com/biocypher/biocypher" %}
+{% set tx_repo_name = "biocypher/biocypher" %}
+{% if page and page.url.startswith("BioChatter/") %}
+  {% set tx_repo_url = "https://github.com/biocypher/biochatter" %}
+  {% set tx_repo_name = "biocypher/biochatter" %}
+{% elif page and page.url.startswith("Biotope/") %}
+  {% set tx_repo_url = "https://github.com/biocypher/biotope" %}
+  {% set tx_repo_name = "biocypher/biotope" %}
+{% endif %}
+<a href="{{ tx_repo_url }}" title="{{ tx_repo_url }}" class="md-source" data-biocypher-source target="_blank" rel="noopener noreferrer">
+  <div class="md-source__icon md-icon">
+    {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository">
+    {{ tx_repo_name }}
+  </div>
+</a>

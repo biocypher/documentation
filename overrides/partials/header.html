@@ -1,0 +1,54 @@
+{#-
+  Single-level BioCypher header.
+  Based on Material for MkDocs' default header partial, with a small custom
+  scientific-docs navigation added between the title and search.
+-#}
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+<header class="{{ class }}" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Open navigation">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo tx-brand" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+      <span class="tx-header-brand">{{ config.site_name }}</span>
+    </a>
+
+    <div class="tx-header-nav" aria-label="Documentation">
+      <a href="https://biocypher.zulipchat.com/" target="_blank" rel="noopener noreferrer">
+        Community
+        <span class="tx-header-nav__ext" aria-hidden="true">{% include ".icons/material/open-in-new.svg" %}</span>
+      </a>
+      <span class="tx-header-nav__sep" aria-hidden="true"></span>
+      <span class="tx-header-nav__label">Docs:</span>
+      <a href="{{ 'BioCypher/'  | url }}" {% if page and page.url.startswith('BioCypher/')  %}aria-current="page"{% endif %}>BioCypher</a>
+      <a href="{{ 'BioChatter/' | url }}" {% if page and page.url.startswith('BioChatter/') %}aria-current="page"{% endif %}>BioChatter</a>
+      <a href="{{ 'Biotope/'    | url }}" {% if page and page.url.startswith('Biotope/')    %}aria-current="page"{% endif %}>Biotope</a>
+    </div>
+
+    {% if config.extra.alternate %}
+      {% include "partials/alternate.html" %}
+    {% endif %}
+    {% if "material/search" in config.plugins %}
+      {% set search = config.plugins["material/search"] | attr("config") %}
+      {% if search.enabled %}
+        <label class="md-header__button md-icon" for="__search" aria-label="Open search">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+      {% endif %}
+    {% endif %}
+    {% if config.repo_url %}
+      <div class="md-header__source">
+        {% include "partials/source.html" %}
+      </div>
+    {% endif %}
+  </nav>
+</header>

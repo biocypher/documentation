@@ -1,6 +1,6 @@
 # Workshop "Establishing a knowledge graph community in biomedical science"
 
-This workshop took place in June 2026 in Heidelberg. Another workshop is planned for February 2026, again in Heidelberg. Stay tuned for announcements about this event! 
+This workshop took place in June 2026 in Heidelberg.
 
 We had a great time welcoming participants from bioinformatics and related disciplines, but also beyond! 
 
