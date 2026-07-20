@@ -539,19 +539,45 @@ body {
 }
 
 /* Logo marquee: a continuous row scrolling right-to-left (logos enter at the
-   right, exit at the left). The row is rendered twice and translated by -50%
-   for a seamless loop; edge masks fade logos in and out. */
+   right, exit at the left). The row is rendered four times and translated by
+   -25% for a seamless loop. The edge fades are gradient overlays, NOT a
+   mask-image on this container: Safari intermittently paints the composited
+   (transform-animated) track inside a masked ancestor as a blank white band
+   that scrolls with it. The section background is solid white, so overlays
+   fading from white are visually identical to the mask. */
 .tx-marquee {
   position: relative;
   overflow: hidden;
   padding-bottom: clamp(2.4rem, 4.2vw, 3.4rem);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-          mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.tx-marquee::before,
+.tx-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* Stop above the container's bottom padding so the fades never paint over
+     the green convex divider that bumps up into the strip from below. */
+  bottom: clamp(2.4rem, 4.2vw, 3.4rem);
+  width: 12%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tx-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
+}
+
+.tx-marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, #ffffff, rgba(255, 255, 255, 0));
 }
 
 .tx-marquee__track {
   display: flex;
   width: max-content;
+  will-change: transform;
   animation: tx-marquee-scroll 42s linear infinite;
 }
 
@@ -613,13 +639,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tx-marquee {
-    -webkit-mask-image: none;
-            mask-image: none;
+  .tx-marquee::before,
+  .tx-marquee::after {
+    display: none;
   }
 
   .tx-marquee__track {
     animation: none;
+    will-change: auto;
     width: auto;
     flex-wrap: wrap;
     justify-content: center;
