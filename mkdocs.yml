@@ -111,7 +111,7 @@ extra:
 
 extra_css:
   - assets/css/css-v1.1.0.css
-  - assets/css/home-v1.0.1.css
+  - assets/css/home-v1.0.2.css
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
