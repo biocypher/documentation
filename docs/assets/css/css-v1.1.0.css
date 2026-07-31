@@ -3,6 +3,11 @@
  *
  *  https://github.com/Neoteroi/mkdocs-plugins
 **/
+.md-typeset pre > code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 :root {
   --nt-color-0: #CD853F;  /* Peru */
   --nt-color-1: #B22222;  /* FireBrick */
