@@ -110,7 +110,7 @@ extra:
   #   provider: mike
 
 extra_css:
-  - assets/css/css-v1.1.0.css
+  - assets/css/css-v1.1.1.css
   - assets/css/home-v1.0.3.css
 
 extra_javascript:
