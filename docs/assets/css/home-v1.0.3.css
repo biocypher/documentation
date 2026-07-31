@@ -539,12 +539,21 @@ body {
 }
 
 /* Logo marquee: a continuous row scrolling right-to-left (logos enter at the
-   right, exit at the left). The row is rendered four times and translated by
-   -25% for a seamless loop. The edge fades are gradient overlays, NOT a
-   mask-image on this container: Safari intermittently paints the composited
-   (transform-animated) track inside a masked ancestor as a blank white band
-   that scrolls with it. The section background is solid white, so overlays
-   fading from white are visually identical to the mask. */
+   right, exit at the left). The row is rendered twice (a third copy joins on
+   ultra-wide windows, see below); each copy is translated left by its own
+   width, so when the cycle restarts copy 2 sits exactly where copy 1 began and
+   the loop is seamless.
+   Two constraints drive this shape, both Safari white-band bugs:
+   - The animation runs on each copy, never on the whole track. WebKit switches
+     a composited layer to tiled backing past ~2-4k px in one dimension and
+     under-computes tile coverage for a transform-animated tiled layer, painting
+     the uncovered tiles as a white block that travels with the logos until the
+     next repaint. Four copies made the animated layer ~11.5k px wide; one copy
+     stays under the threshold.
+   - The edge fades are gradient overlays, NOT a mask-image on this container:
+     Safari intermittently paints the composited track inside a masked ancestor
+     as a blank white band. The section background is solid white, so overlays
+     fading from white are visually identical to the mask. */
 .tx-marquee {
   position: relative;
   overflow: hidden;
@@ -577,8 +586,6 @@ body {
 .tx-marquee__track {
   display: flex;
   width: max-content;
-  will-change: transform;
-  animation: tx-marquee-scroll 42s linear infinite;
 }
 
 .tx-marquee__group {
@@ -588,6 +595,10 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  /* Both copies share one animation definition, so they start together and
+     stay flush. No will-change: the transform animation promotes the copy on
+     its own, and pinning a layer this wide is what invites tiled backing. */
+  animation: tx-marquee-scroll 42s linear infinite;
 }
 
 .tx-marquee__group li {
@@ -630,12 +641,24 @@ body {
   white-space: nowrap;
 }
 
-/* The track holds four identical copies; translating by one quarter moves
-   exactly one copy, so a full copy always covers the viewport and the reset
-   is seamless (works up to a viewport ~3x one copy's width). */
+/* Each copy travels exactly its own width per cycle, which is one copy of the
+   logo row per 42s. */
 @keyframes tx-marquee-scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-25%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Two copies cover any viewport narrower than one copy (~4030px at the largest
+   type step). A third copy carries the loop on wider windows; each copy is
+   still animated on its own, so the layer stays small. */
+.tx-marquee__group:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: 3800px) {
+  .tx-marquee__group:nth-child(3) {
+    display: flex;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -645,8 +668,6 @@ body {
   }
 
   .tx-marquee__track {
-    animation: none;
-    will-change: auto;
     width: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -654,7 +675,7 @@ body {
   }
 
   .tx-marquee__group {
-    min-width: 0;
+    animation: none;
     flex-wrap: wrap;
     justify-content: center;
   }

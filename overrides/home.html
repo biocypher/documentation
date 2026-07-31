@@ -105,7 +105,7 @@ bc.write_import_call()</code></pre>
       ] %}
       <div class="tx-marquee" aria-label="Partner, user, and project organisations">
         <div class="tx-marquee__track">
-          {% for _rep in [1, 2, 3, 4] %}
+          {% for _rep in [1, 2, 3] %}
           {% set dup = not loop.first %}
           <ul class="tx-marquee__group"{% if dup %} aria-hidden="true"{% endif %}>
             {% for item in tx_partners %}
