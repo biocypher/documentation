@@ -93,9 +93,9 @@ them with AI.
 
     ---
 
-    A unified interface for accessing BioCypher ecosystem resources.
+    A framework that helps AI agents build and maintain purpose-driven knowledge graphs from a project's data.
 
-    [:octicons-arrow-right-24: Biotope in draft stage](Biotope/index.md)
+    [:octicons-arrow-right-24: To the Biotope documentation](Biotope/index.md)
 
 </div>
 

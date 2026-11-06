@@ -1,6 +1,6 @@
 # The Philosophy of Context-Aware Knowledge Management
 
-The BioCypher ecosystem is built on a fundamental principle: **using project context to improve workflows and performance**. This philosophy appears across the ecosystem, from BioCypher's schema configuration to BioChatter's retrieval processes, Biotope's project management, and BioGather.
+The BioCypher ecosystem is built on a fundamental principle: **using project context to improve workflows and performance**. This philosophy appears across the ecosystem, from BioCypher's schema configuration to BioChatter's retrieval processes, Biotope's purpose statement, and BioGather.
 
 ## The Core Principle: Context as a Bridge
 
@@ -105,61 +105,35 @@ By using enriched schema context (preferably `schema_info.yaml`), BioChatter ach
 - **Better explanations**: The system can explain queries using project-specific terminology
 - **Smarter selection**: Understanding which concepts are actually in the data helps avoid queries for non-existent entities
 
-### 4. Biotope: Project Context Management
+### 3. Biotope: The Purpose as Project Context
 
-Biotope acts as a **project context manager** for the BioCypher ecosystem. It maintains and leverages project context across different tools, providing a unified CLI interface for accessing BioCypher ecosystem resources.
+Biotope is a framework that an AI agent operates to build and maintain the knowledge graph of one project. Its project context is the **purpose statement**: who the graph is for and which questions it must answer. The agent agrees the purpose with you first and weighs every later choice against it.
 
-#### Current Functionality
+Within that purpose, the agent:
 
-Biotope provides:
+- **Describes the data**: `biotope add` describes each local file in Croissant, with its tables, columns and types. The description is the contract that the project's code is checked against.
+- **Extracts records from documents**: papers and web pages become records through an extractor the agent writes, under a schema you review. Each value keeps the quote it came from.
+- **Writes the representation as code**: the topology, mappings and identity rules are plain, typed Python, and `biotope graph check` checks them against the descriptions before anything runs.
+- **Builds through BioCypher**: `biotope graph build` exports Neo4j import files or one SQLite file, and every node and edge names the source rows it came from.
+- **Leaves the decisions to you**: the agent asks about every choice that changes the graph's answers, such as which records are the same thing, and records your answers.
 
-- **Project initialization**: `biotope init` creates project structure and captures metadata
-- **Metadata annotation**: `biotope annotate` helps annotate data with consistent metadata using Croissant ML
-- **File management**: `biotope get` downloads files and automatically starts annotation
-- **Workflow integration**: Integration points for BioCypher and BioChatter workflows
-- **Context-aware tool discovery**: Search that uses project context to help users find tools through the BioContext registry and public APIs such as bio.tools
-
-#### Context Preservation
-
-When you initialize a Biotope project with `biotope init`, it:
-
-- **Captures project metadata**: Name, knowledge sources, output preferences
-- **Maintains configuration**: Stores BioCypher and BioChatter configurations
-- **Tracks data lineage**: Records where data comes from and how it's processed
-- **Preserves schema context**: Links to schema configurations used in the project
-
-#### Development Direction
-
-Biotope is being developed as a project management layer with:
-
-- **Complete workflow integration**: Full `biotope build` integration with BioCypher
-- **Intelligent chat interface**: `biotope chat` automatically using the correct schema for BioChatter
-- **Advanced annotation**: Enhanced `biotope annotate` with LLM-assisted metadata generation
-- **Data extraction**: `biotope read` for extracting information from unstructured modalities (BioGather integration)
-- **Visualization tools**: `biotope view` for visual analysis and interpretation
-- **Performance optimization**: Context-aware caching and resource management
-- **Web interface**: Extension beyond CLI to web-based interfaces
+When new data of the same shape arrives, the project rebuilds with commands only. A change in the data's structure is reported before the build.
 
 ```mermaid
-graph LR
-    A[biotope init<br/>Available] -->|Creates| B[Project Context]
-    B -->|Used by| C[biotope build]
-    B -->|Used by| D[biotope chat]
-    B -->|Used by| E[biotope annotate]
-    B -->|Used by| F[biotope read]
-    
-    C -.->|Uses| G[BioCypher Schema]
-    D -.->|Uses| H[BioChatter Schema]
-    E -->|Current| I[Metadata Schema]
-    
-    style B fill:#e8f5e9
-    style E fill:#fff4e1
-    style C fill:#f3e5f5
-    style D fill:#f3e5f5
-    style F fill:#f3e5f5
+flowchart LR
+    P[Purpose statement] -->|Guides| A[Agent]
+    D[Local data<br/>tables and documents] -->|biotope add<br/>biotope extract| C[Croissant descriptions<br/>and extracted records]
+    C -->|biotope source generate| S[Typed source code]
+    A -->|Writes| M[Topology and mappings]
+    S --> B[biotope graph build]
+    M --> B
+    B -->|BioCypher| G[Knowledge graph]
+
+    style P fill:#e8f5e9
+    style G fill:#e1f5ff
 ```
 
-### 5. BioGather: Context-Informed Extraction
+### 4. BioGather: Context-Informed Extraction
 
 BioGather extends the same project-context pattern to extraction:
 
@@ -202,8 +176,8 @@ Here's how context flows through the entire ecosystem:
 
 ```mermaid
 flowchart TD
-    subgraph "Project Initialization"
-        A[biotope init] -->|Creates| B[Project Context]
+    subgraph "Project Purpose"
+        A[Biotope purpose statement] -->|Defines| B[Project Context]
     end
     
     subgraph "Schema Definition"
