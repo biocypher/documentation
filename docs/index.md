@@ -168,7 +168,7 @@ hide:
       <h3>Start from tutorials</h3>
       <p>Build a graph manually with BioCypher or install Biotope's agent skills.</p>
       <a href="BioCypher/learn/quickstart/">Manual tutorial →</a>
-      <a href="Biotope/plugin/">Agent setup →</a>
+      <a href="Biotope/get-started/">Agent setup →</a>
     </article>
   </div>
 </section>
